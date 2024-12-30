@@ -3,7 +3,7 @@ import MenuAtag from './MenuAtag'
 
 function Footer() {
   return (
-    <div className='footer'>
+    <div className='footer eglish'>
       <div className='textAnimation'>
         <div className='dark'>
           <img src='/image/textAnimation_footerw.png' alt='textAnimation_footer.png'/>

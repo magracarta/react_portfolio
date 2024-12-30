@@ -1,5 +1,5 @@
-body { font-family: "Noto Sans KR", serif; line-height: 1.5em; font-weight: 400; transition: all .3s ; }
-.eglish { font-family: "Roboto", serif; }
+body { font-family: "Roboto", "Noto Sans KR"; line-height: 1.5em; font-weight: 400; transition: all .3s ; }
+
 li, ul { list-style: none; margin: 0; padding: 0; }
 a { text-decoration: none; color: inherit; font-size: inherit;  }
 
@@ -14,6 +14,7 @@ a { text-decoration: none; color: inherit; font-size: inherit;  }
     --border-color : #767676;
 
     --gray: #EFEFEF;
+    --gray2: #EFEFEF;
 }
 
 
@@ -24,6 +25,7 @@ a { text-decoration: none; color: inherit; font-size: inherit;  }
     --textcolorw:#555555;
     
     --gray: #202020;
+    --gray2: #5c5c5c;
 }
 @media screen and (max-width : 1100px) {
     :root ,
@@ -116,7 +118,7 @@ body { background: var(--background); color: var(--textcolor); }
 .sidemenu .rightImgwrap { width: 42%;  position: relative;  display: flex; align-items: center; }
 .sidemenu .rightImgwrap::after { content: ""; display: block; height: 100%; width: 1px; background: var(--border-color); position: absolute; top: 0; left: 0; }
 .sidemenu .rightImgwrap img { width: 60%; position: relative; left: 50px; }
-
+.dark .sidemenu .rightImgwrap img { border: 1px solid #5c5c5c; }
 /* 아래 info*/
 .sidemenu .lastmyinfo { display: none; }
 
