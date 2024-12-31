@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import MenuAtag from './MenuAtag'
 
 function Footer() {
+  let gotopbtn = useRef(null);
+  useEffect(()=>{
+    window.addEventListener("scroll",()=>{
+      if(window.scrollY <= 100) gotopbtn.current.style.visibility = "hidden";
+      else gotopbtn.current.style.visibility = "visible";
+    });
+  },[]);
+  let gotop = ()=>{
+    window.scrollTo({top:0});
+  }
   return (
+    <>
+    <div className='gotop' onClick={gotop} ref={gotopbtn}><img src='/image/gotop.svg'/></div>
     <div className='footer eglish'>
       <div className='textAnimation'>
         <div className='dark'>
@@ -41,7 +53,9 @@ function Footer() {
           </div>
         </div>
       </div>
+      
     </div>
+    </>
   )
 }
 

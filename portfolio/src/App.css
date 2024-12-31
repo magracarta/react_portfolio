@@ -2,8 +2,9 @@ body { font-family: "Roboto", "Noto Sans KR"; line-height: 1.5em; font-weight: 4
 
 li, ul { list-style: none; margin: 0; padding: 0; }
 a { text-decoration: none; color: inherit; font-size: inherit;  }
+pre { font-size: inherit; font-family: inherit; font-weight: inherit; line-height: 1.5em; }
 
-
+* { line-height: 1.5em; }
 :root ,
 :root.light {
     --background:#fff;
@@ -15,6 +16,7 @@ a { text-decoration: none; color: inherit; font-size: inherit;  }
 
     --gray: #EFEFEF;
     --gray2: #EFEFEF;
+    --gray3: #F9F9F9;
 }
 
 
@@ -26,12 +28,17 @@ a { text-decoration: none; color: inherit; font-size: inherit;  }
     
     --gray: #202020;
     --gray2: #5c5c5c;
+    --gray3: #747474;
 }
+
+.mo {  display: none; }
 @media screen and (max-width : 1100px) {
     :root ,
     :root.light {
         --leftright : 15px;
     }
+    .mo { display: block; }
+    .pc { display: none; }
     
 }
 .innerContainer { margin: 0 var(--leftright); }
@@ -105,7 +112,7 @@ body { background: var(--background); color: var(--textcolor); }
 }
 .sidemenu .sidemenuwrap .menuWrap ul:hover .mouseMove { display: block;}
 .sidemenu .sidemenuwrap .menuWrap .mouseMove span{ color: #202328; font-weight: 500; font-family: "Slabo 27px", serif;}
-.sidemenu .sidemenuwrap .menuWrap .mouseMove img { margin-right: 10px; }
+.sidemenu .sidemenuwrap .menuWrap .mouseMove img { margin-right: 10px; display: inline-block; }
 
 
 
@@ -148,7 +155,7 @@ body { background: var(--background); color: var(--textcolor); }
 
 
 /* footer */
-.footer {width: 100%; overflow: hidden; margin-top: 180px; background: var(--gray); padding: 100px 0 75px; }
+.footer {width: 100%; overflow: hidden; margin-top: 180px; background: var(--gray); padding: 100px 0 75px; position: relative; z-index: 2; }
 /* 텍스트 애니메이션 */
 .footer .textAnimation {  }
 .footer .textAnimation img {  width: 2875px; }
@@ -193,7 +200,7 @@ body { background: var(--background); color: var(--textcolor); }
 
 
 @media screen and (max-width : 1100px) {
-    .footer { padding: 60px 0 56px; }
+    .footer { padding: 60px 0 56px; margin-top: 80px; }
     /* 텍스트 애니메이션 */
     .footer .textAnimation img {  width: 1272px; }
     .footer .textAnimation > div { display: flex; animation: textani 20s infinite linear; }
@@ -230,4 +237,13 @@ body { background: var(--background); color: var(--textcolor); }
     
 
     
+}
+
+.gotop { cursor: pointer; position: fixed; bottom: 80px; right: 60px; z-index: 0; background: var(--gray2); width: 70px; height: 70px; border-radius: 14px; display: flex; align-items: center; justify-content: center; z-index: 2; }
+.gotop img { mix-blend-mode: difference; }
+
+
+@media screen and (max-width : 1100px) {
+    .gotop { width: 50px; height: 50px; bottom: 20px; right: 15px; border-radius: 8px; }
+    .gotop img { width: 40%; }
 }

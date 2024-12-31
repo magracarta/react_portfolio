@@ -3,7 +3,7 @@ import "../css/main1.css"
 
 function Section1() {
   return (
-    <div className='section01'>
+    <div className='section01' id ="HOME">
         <div className='innerContainer'>
             {/* 글자 */}
             <div className='textTitle'>

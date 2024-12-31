@@ -1,0 +1,72 @@
+.section4 { padding: 9.375vw 0; border-bottom: 1px solid var(--titlecolor); }
+
+.section4 > div { display: flex; }
+.section4 .left_title { width: 27%; margin: 0 var(--leftright); display: flex;
+    flex-direction: column; justify-content: center;
+}
+.section4 .left_title h2 { font-size: 3.333vw; color: var(--titlecolor); line-height: 1.5em; margin: 0; margin-top: -5.2vw; }
+.section4 .left_title p { font-size: 1.04vw; margin: 0; margin-top: 0.78vw; }
+
+
+.section4 .slide-container { width: calc(73% - 2.65vw); padding-left: 2.65vw; }
+.section4 .slide-container .swiper {  }
+.section4 .slide-container .swiper .swiper-wrapper { height: 100%; }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide {  }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div {  }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a {  }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a img { width: 100%; }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a P { font-size: 1.04vw; margin: 0; margin-top: 0.78vw; font-weight: 500; }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap { display: flex; margin-top: 0.7vw; }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap span { background: var(--textcolor); color: var(--gray); padding: 4px 15px; border-radius: 50px; margin-right:.72vw; font-size: .72vw; }
+
+.section4 .slide-container .swiper .swiper-scrollbar { position: relative; margin-top: 3.1vw; left: 0; width: 100%; background: var(--gray); }
+.section4 .slide-container .swiper .swiper-scrollbar .swiper-scrollbar-drag { background: var(--titlecolor); }
+
+
+
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(1),
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(2),
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(4),
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(3) {   transition: opacity  1s; opacity: 0;  }
+.section4 .left_title p { transform: translate(0, 100px); opacity: 0;   transition: all 0.8s;  }
+.section4 .left_title h2 {  transform: translate(0, 100px); opacity: 0; transition: all  1s;  }
+
+.section4.on .left_title p,
+.section4.on .left_title h2 { transform: translate(0, 0); opacity: 1; } 
+
+
+.section4.on .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(1) { opacity: 1; transition: opacity  1.5s 0s; } 
+.section4.on .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(2) { opacity: 1;  transition: opacity  1.5s 0.5s;} 
+.section4.on .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(3) { opacity: 1; transition: opacity   1.5s 1s; } 
+.section4.on .slide-container .swiper .swiper-wrapper .swiper-slide:nth-child(4) { opacity: 1; transition: opacity   1.5s 1.5s; } 
+
+
+
+
+
+@media screen and (max-width : 1100px) {
+    .section4 { padding: 80px 0; border: none; }
+    .section4 .slide-container { width: 100%; padding-left: 0; }
+    .section4 .slide-container .swiper { padding: 0 15px;  }
+    
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide {  }
+    .section4 .slide-container .swiper .titleslide { height: 65.5vw; display: flex; flex-direction: column; justify-content: center; }
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide .titleslide h2 { font-size: 50px; color: var(--titlecolor); margin: 0; line-height: 1.3em;}
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide .titleslide p { font-size: 13px; margin: 0; margin-top: 10px; }
+
+    
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a P { font-size: 15px; margin-top: 10px;  }
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap { margin-top: 10px; }
+    .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap span { padding: 2px 10px; font-size: 10px; display: block;  margin-right:5px;}
+
+    .section4 .slide-container .swiper .swiper-scrollbar { position: relative; margin-top: 60px; left: 0; width: 100%; }
+
+
+    
+    .section4 .titleslide p { transform: translate(0, 50px); opacity: 0;   transition: all .6s 1s;  }
+    .section4 .titleslide h2 {  transform: translate(0, 50px); opacity: 0; transition: all  1s;  }
+
+    .section4.on .titleslide p,
+    .section4.on .titleslide h2 { transform: translate(0, 0); opacity: 1; } 
+
+}

@@ -6,7 +6,7 @@ function MenuAtag({text,clickFn,idx}) {
   return (
     <li><a href={`#${text}`} onClick={()=>{
         navigate("/");
-        clickFn();
+        clickFn(text);
     }} data-idx={idx} >{text}</a></li>
   )
 }

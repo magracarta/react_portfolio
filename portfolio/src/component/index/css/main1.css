@@ -4,7 +4,7 @@
 .mainPage .section01 {  }
 .mainPage .section01 .textTitle { padding-top: 90px; display: flex; flex-direction: column; align-items: center; }
 .mainPage .section01 .textTitle .titleAni {  }
-.mainPage .section01 .textTitle .titleAni > div { width: 0%; overflow: hidden; animation: titleAni 2s  forwards linear ; animation-timing-function: steps(50, end); }
+.mainPage .section01 .textTitle .titleAni > div { width: 0%; overflow: hidden; animation: titleAni 1.2s  forwards linear ; animation-timing-function: steps(70, end); }
 .mainPage .section01 .textTitle h1 { position: relative; left: -3px;  -webkit-text-stroke: 7px var(--titlecolor); color: var(--titlecolor); font-size: 15.41666666666667vw; font-weight: 900; 
     letter-spacing: 1.2vw;  text-align: center; top: 0px; margin: 0 auto; line-height: 1.5em; }
 @media screen and (max-width : 1900px) { .mainPage .section01 .textTitle h1 { letter-spacing: 1.1vw; } }
@@ -25,7 +25,16 @@ transition: all .3s; top: 0;
 
 .mainPage .section01 .line-context { margin-top: 157px; width: 100%; font-size: 18px; font-weight: 500; }
 .mainPage .section01 .line-context p { margin: 0 0 12px; }
-.mainPage .section01 .line-context .bottom { border-top: 1px solid var(--titlecolor); padding-top: 16px; display: flex; justify-content: space-between; }
+.mainPage .section01 .line-context .bottom { position: relative;  padding-top: 16px; display: flex; justify-content: space-between; }
+.mainPage .section01 .line-context .bottom::before { content: ""; width: 0%; height: 1px; background: var(--titlecolor); position: absolute; display: block; right: 0; top: 0px; transition: all 3s; z-index: 2; animation:  lineanimation 2s linear forwards; } 
+
+@keyframes lineanimation {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+
+
 .mainPage .section01 .line-context .bottom span {  }
 
 

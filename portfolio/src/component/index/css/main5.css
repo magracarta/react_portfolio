@@ -1,0 +1,57 @@
+.section5 { padding: 9.375vw 0 0; }
+.section5 .title {  }
+.section5 .title h2 { font-size: 3.333vw; color: var(--titlecolor);  margin: 0; }
+.section5 .title p { font-size: 1.04vw; margin: 0; margin-top: 0.78vw; }
+
+.section5 .wrapbox { display: flex; margin-top: 4.5vw; }
+.section5 .wrapbox > a { width: calc(50% - 0.6vw); background: var(--gray2); padding: 2vw; display: block; }
+.section5 .wrapbox > a.left { margin-right: 1.25vw; background: var(--gray3); }
+.section5 .wrapbox > a .top {  }
+.section5 .wrapbox > a .top h3 { font-size: 2.08vw; color: var(--titlecolor); margin: 0; }
+.section5 .wrapbox > a .top p { margin: 0; font-size: 0.78vw; margin-top: .78vw; }
+
+
+.section5 .wrapbox > a .bottom { margin-top: 7.9vw; border-top: 1px solid var(--titlecolor); padding-top: 0.78vw; }
+.section5 .wrapbox > a .bottom div { font-size: .78vw; display: flex; }
+.section5 .wrapbox > a .bottom div img { mix-blend-mode: difference; width: 1.5vw; margin-left: 0.625vw; transition: all .6s; }
+
+
+.section5 .wrapbox > a:hover .bottom div img { transform: translate(10px, 0); }
+
+
+
+.section5 .title h2, 
+.section5 .title p,
+.section5 .wrapbox > a:nth-child(1),
+.section5 .wrapbox > a:nth-child(2) { transform: translate(0, 150px); opacity: 0; transition: all 0.6s;}
+
+
+.section5.on .title h2, 
+.section5.on .title p,
+.section5.on .wrapbox > a:nth-child(1),
+.section5.on .wrapbox > a:nth-child(2) { transform: translate(0, 0); opacity: 1;  transition: all 1s;  }
+
+
+
+.section5.on .title h2 { transition: all 0.8s; }
+.section5.on .title p { transition: all 1.2s; }
+.section5.on .wrapbox > a:nth-child(1) { transition: all 1.5s; }
+.section5.on .wrapbox > a:nth-child(2) { transition: all 2s; }
+
+
+
+@media screen and (max-width : 1100px) {
+    .section5 { padding: 0; }
+    .section5 .title h2 { font-size: 50px;  }
+    .section5 .title p { font-size: 15px;  margin-top: 5px; }
+
+    .section5 .wrapbox { display: block; margin-top: 40px; }
+    .section5 .wrapbox > a { width: auto; margin: 0;  padding: 15px 20px; margin-top: 20px; }
+    
+    .section5 .wrapbox > a .top h3 { font-size: 30px; }
+    .section5 .wrapbox > a .top p { margin: 0; font-size: 15px; }
+
+    .section5 .wrapbox > a .bottom { margin-top: 77px;  padding-top: 10px; }
+    .section5 .wrapbox > a .bottom div { font-size: 13px; }
+    .section5 .wrapbox > a .bottom div img { mix-blend-mode: difference; width: 15px; margin-left: 12px; }
+}
