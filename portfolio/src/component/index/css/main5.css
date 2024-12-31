@@ -49,9 +49,10 @@
     .section5 .wrapbox > a { width: auto; margin: 0;  padding: 15px 20px; margin-top: 20px; }
     
     .section5 .wrapbox > a .top h3 { font-size: 30px; }
-    .section5 .wrapbox > a .top p { margin: 0; font-size: 15px; }
+    .section5 .wrapbox > a .top p { margin: 0; font-size: 13px; }
 
     .section5 .wrapbox > a .bottom { margin-top: 77px;  padding-top: 10px; }
     .section5 .wrapbox > a .bottom div { font-size: 13px; }
     .section5 .wrapbox > a .bottom div img { mix-blend-mode: difference; width: 15px; margin-left: 12px; }
+    .dark .section5 .wrapbox > a .bottom div img { mix-blend-mode: normal;  }
 }

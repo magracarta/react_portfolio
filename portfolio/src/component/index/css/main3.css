@@ -62,7 +62,7 @@ font-size: 0.78vw;
 
 @media screen and (max-width : 1100px) { 
     /* .section3 .project-list ul li .right > div .img > div img { width: 90%; } */
-    .section3 .title { margin: 0 var(--leftright); padding: 100px 0; }
+    .section3 .title { margin: 0 var(--leftright); padding: 180px 0; }
     .section3 .title h2 { font-size: 50px; font-weight: 600; }
     .section3 .title p { font-size: 15px; margin-top: 15px; }
 

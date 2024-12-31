@@ -126,7 +126,7 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
     .section2 > div > ul > li .title img { display: block; }
 
 
-    .section2 {  border-bottom: none; margin-top: 80px; }
+    .section2 {  border-bottom: none; margin-top: 80px;  }
     .section2 .top {  border-bottom: none;  }
     .section2 > div > ul { display: block !important;  }
     .section2 > div > ul > li {  width: 100% !important; }
@@ -138,14 +138,17 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
     .section2 > div > ul > li .content { height: 0; overflow: hidden; margin: 0;  transition: all .6s;  }
     .section2 > div > ul > li .content .text-wrap {   margin: 24px 0px 0; padding: 0 15px;  }
     .section2 > div > ul > li .content .text-wrap span {  display: block;  }
-    .section2 > div > ul > li .content .text-wrap p {  margin: 0 0 20px; line-height: 1.8em; }
+    .section2 > div > ul > li .content .text-wrap p {  margin: 0 0 20px; line-height: 1.8em; font-size: 14px; }
     .section2 > div > ul > li.infobox .content .text-wrap p:last-child {  margin: 0 0 45px; }
 
     .section2 > div > ul > li.on .title img { transform: rotate(-180deg); }
 
 
     .section2 .top > ul > li.photobox > .content > div img { width: calc(100% - 30px); padding: 20px 0; margin: 0 15px; }
-    .section2 .top > ul > li.photobox > .content .mouseMove {  top: 30%; left: 50%; transform: translate(-50% ,-50%) !important; z-index: 1; }
+    .section2 .top > ul > li.photobox > .content .mouseMove {  top: 30%; left: 50%; transform: translate(-50% ,-50%) !important; z-index: 1; font-size: 14px; padding: 10px; max-width: 287px;
+        width: 70%; }
+    .section2 .top > ul > li.photobox > .content .mouseMove img { width: 20px; margin: 0; padding: 0; margin-right: 10px; }
+    
 
 
 
@@ -157,6 +160,16 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
 
 
     .section2 .content > div { padding-bottom: 30px; }
+
+
+    .section2 .top > ul > li.activities .text-wrap:last-child { padding-bottom: 40px; }
+    .section2 .bottom .license .text-wrap:last-child { padding-bottom: 40px; }
+    .section2 .bottom .tmi .text-wrap:first-child { padding-top: 30px; }
+
+
+    .section2 .bottom .license,
+    .section2 .bottom .skils ,
+    .section2 .top > ul > li { border-right: none !important; }
 }
 
 
