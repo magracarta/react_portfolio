@@ -1,7 +1,7 @@
-.mainPage { margin-top: 87px; }
+.mainPage {  }
 
 /* section01 */
-.mainPage .section01 {  }
+.mainPage .section01 {  padding-top: 87px; }
 .mainPage .section01 .textTitle { padding-top: 90px; display: flex; flex-direction: column; align-items: center; }
 .mainPage .section01 .textTitle .titleAni {  }
 .mainPage .section01 .textTitle .titleAni > div { width: 0%; overflow: hidden; animation: titleAni 1.2s  forwards linear ; animation-timing-function: steps(70, end); }

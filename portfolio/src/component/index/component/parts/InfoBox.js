@@ -2,8 +2,8 @@ import React from 'react'
 
 function InfoBox({dropdownFn}) {
   return (
-    <li className='infobox' onClick={()=>{dropdownFn(1)}}>
-        <div className='title'>INFO<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
+    <li className='infobox'>
+        <div className='title'  onClick={()=>{dropdownFn(1)}}>INFO<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
         <div className='content'>
           <div>
             <div className='text-wrap'>

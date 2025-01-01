@@ -2,8 +2,8 @@ import React from 'react'
 
 function ActivitiesProject({dropdownFn}) {
   return (
-    <li className='activities' onClick={()=>{dropdownFn(2)}}>
-        <div className='title'>ACTIVITIES & PROJECTS<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
+    <li className='activities'>
+        <div className='title'  onClick={()=>{dropdownFn(2)}}>ACTIVITIES & PROJECTS<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
         <div className='content'>
             <div>
                 <div className='text-wrap'>

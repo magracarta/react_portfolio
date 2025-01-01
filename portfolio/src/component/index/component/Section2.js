@@ -36,8 +36,6 @@ function Section2() {
     
   }
 
- 
-  
 
     useEffect(()=>{
         if( section2.current && document.querySelector(".section2")) {
@@ -61,8 +59,8 @@ function Section2() {
         {/* top */}
         <div className='top'>
           <ul>
-            <li className='photobox' onMouseMove={(e)=>{mouseEvent(e)}} onClick={()=>{dropdownFn(0)}}>
-              <div className='title'>PHOTO<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
+            <li className='photobox' onMouseMove={(e)=>{mouseEvent(e)}} >
+              <div className='title' onClick={()=>{dropdownFn(0)}}>PHOTO<img src='/image/arrowBtn.svg' alt='arrowBtn'/></div>
               <div className='content' >
                 <div>
                   <img src='/image/section2-photo.png' alt='section2-photo' />

@@ -46,7 +46,7 @@ function Section5() {
                     <div>
                         <div className='top'>
                             <h3>CAREER NOTION</h3>
-                            <p>에코마케팅에서의 경력과 작업물들이 정리되어있습니다.</p>
+                            <p>에코마케팅에서의 경력과 작업물들이 정리되어 있습니다.</p>
                         </div>
                         <div className='bottom'>
                             <div>자세히 보러가기 <img src='/image/moreviewArrow.svg' alt='moreviewArrow.svg' /></div>
