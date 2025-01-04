@@ -32,7 +32,7 @@ function TMI({dropdownFn}) {
                 </div>
                 
                 <div className='anoter'>
-                    <img src='/image/dropdownArrw.svg' alt='dropdownArrw.svg'/> 저에 대해 더 궁금하시지 않나요?!
+                    <img src='/image/dropdownArrw.svg' alt='dropdownArrw.svg'/> 저에 대해 더 궁금하시지 않으신가요?
                 </div>
             </div>
         </div>

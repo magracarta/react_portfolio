@@ -17,7 +17,7 @@
 .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a img { width: 100%; }
 .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a P { font-size: 1.04vw; margin: 0; margin-top: 0.78vw; font-weight: 500; }
 .section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap { display: flex; margin-top: 0.7vw; }
-.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap span { background: var(--textcolor); color: var(--gray); padding: 4px 15px; border-radius: 50px; margin-right:.72vw; font-size: .72vw; }
+.section4 .slide-container .swiper .swiper-wrapper .swiper-slide > div a .tagWrap span { background: var(--textcolor); color: var(--gray); padding: 4px 15px; border-radius: 50px; margin-right:.52vw; font-size: .72vw; }
 
 .section4 .slide-container .swiper .swiper-scrollbar { position: relative; margin-top: 3.1vw; left: 0; width: 100%; background: var(--gray); }
 .section4 .slide-container .swiper .swiper-scrollbar .swiper-scrollbar-drag { background: var(--titlecolor); }

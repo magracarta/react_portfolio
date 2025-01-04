@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Skillcionparts from './Skillcionparts'
 
 function Skils() {
   let [dropindex, setDropindex] = useState(null);
+
+      useEffect(()=>{setTimeout(()=>{dropdownFn(0)},100)},[]);
   let dropdownFn = (n) => {
     if(window.innerWidth > 1100) return; 
     let elem = document.querySelectorAll(".dropdown")[n];
@@ -31,9 +33,9 @@ function Skils() {
             </p>
         </div>
         <div className='bottom'>
-            <div className='backend dropdown' onClick={(e)=>{dropdownFn(0)}}>
+            <div className='backend dropdown'>
                 <div>
-                    <span className='name'>BACK END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                    <span className='name' onClick={(e)=>{dropdownFn(0)}}>BACK END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                     <ul>
                         <Skillcionparts img = {"baend (1).png"} text={"Spring Boot"}/>
                         <Skillcionparts img = {"baend (2).png"} text={"MY SQL"}/>
@@ -44,9 +46,9 @@ function Skils() {
                     </ul>
                 </div>
             </div>
-            <div className='front dropdown' onClick={(e)=>{dropdownFn(1)}}>
+            <div className='front dropdown'>
                 <div>
-                    <span className='name'>FRONT END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                    <span className='name' onClick={(e)=>{dropdownFn(1)}}>FRONT END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                     <ul>
                         <Skillcionparts img = {"front (1).png"} text={"REACT"}/>
                         <Skillcionparts img = {"front (8).png"} text={"HTML5"}/>
@@ -61,8 +63,8 @@ function Skils() {
             </div>
             <div className='tool'>
                 <div>
-                   <div className='top dropdown' onClick={(e)=>{dropdownFn(2)}}>
-                    <span className='name'>TOOL <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                   <div className='top dropdown'>
+                    <span className='name'  onClick={(e)=>{dropdownFn(2)}}>TOOL <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                         <ul>
                             <Skillcionparts img = {"tool (1).png"} text={"IntelliJ"}/>
                             <Skillcionparts img = {"tool (2).png"} text={"VS Code"}/>
@@ -70,8 +72,8 @@ function Skils() {
                             <Skillcionparts img = {"tool (4).png"} text={"GITHUB"}/>
                         </ul>
                    </div>
-                   <div className='bottom-in dropdown' onClick={(e)=>{dropdownFn(3)}}>
-                    <span className='name'>OPEN API <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                   <div className='bottom-in dropdown'>
+                    <span className='name' onClick={(e)=>{dropdownFn(3)}}> OPEN API <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                         <ul>
                             <Skillcionparts img = {"api (1).png"} text={"Open\nWeather Map"}/>
                             <Skillcionparts img = {"api (2).png"} text={"도로명 주소\n검색 (Daum)"}/>

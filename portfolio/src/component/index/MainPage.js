@@ -4,16 +4,18 @@ import Section2 from './component/Section2'
 import Section3 from './component/Section3'
 import Section4 from './component/Section4'
 import Section5 from './component/Section5'
-import { useLocation } from 'react-router-dom'
+import {  useLocation } from 'react-router-dom'
 
 
 function MainPage() {
-  
+  let location = useLocation();
   useEffect(()=>{
+    console.log(location.pathname)
+    if(location.pathname != "/") return;
     setTimeout(()=>{
       if(window.innerWidth < 1100){
         let pathname = window.location.href.split("#")[1];
-        window.scrollTo({top: document.querySelector(`#${pathname}`).offsetTop-50});
+        if(pathname)window.scrollTo({top: document.querySelector(`#${pathname}`).offsetTop-50});
       }
     },500)
 

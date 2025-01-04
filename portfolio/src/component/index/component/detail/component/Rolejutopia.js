@@ -29,7 +29,7 @@ function Rolejutopia() {
                     freeMode={true}
                     modules={[Keyboard, Scrollbar, Navigation,FreeMode]}
                     className="mySwiper"
-                    scrollbar={true}
+                    scrollbar={{ draggable: true }}
                     // navigation={true}
                 >
                     

@@ -12,9 +12,11 @@ function Section1() {
                 </div>
                 <span className='line'></span>
                 <div className='tag-container'>
-                    <span className='tag'>WEB</span>
                     <span className='tag'>FRONTEND</span>
+                    <span className='tag'>+</span>
                     <span className='tag'>BACKEND</span>
+                    <span className='tag'>=</span>
+                    <span className='tag'>WEB DEVELOPER</span>
                 </div>
                 <div className='line-context'>
                     <p>개발자 김민주를 소개합니다.</p>

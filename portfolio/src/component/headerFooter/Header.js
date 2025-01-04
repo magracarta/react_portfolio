@@ -39,7 +39,12 @@ function Header() {
       {/* 헤더 */}
       <div className='header-top'>
         <div>
-          <div className='menu-btn' onClick={()=>{setSidemenu(!sidemenu)}}>{sidemenu?"CLOSE":"MENU"}</div>
+          <div className='menu-btn' onClick={()=>{setSidemenu(!sidemenu)}}> 
+            <span className={sidemenu?"habergermenu on":"habergermenu"}>
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>  {sidemenu?"CLOSE":"MENU"}</div>
           <div className='home_email'>
             <div className='home_btn' onClick={()=>{navigate("/")}}><a href='#HOME'>HOME</a></div>
             <div className='email'>Kim Min Ju<br/><a href='mailto:rmforl1996@gmail.com'>rmforl1996@gmail.com</a></div>

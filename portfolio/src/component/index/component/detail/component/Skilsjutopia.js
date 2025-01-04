@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Skillcionparts from './Skillcionparts'
 
 function Skilsjutopia() {
     let [dropindex, setDropindex] = useState(null);
+    
+      useEffect(()=>{setTimeout(()=>{dropdownFn(0)},300)},[]);
     let dropdownFn = (n) => {
       if(window.innerWidth > 1100) return; 
       let elem = document.querySelectorAll(".dropdown")[n];
@@ -30,9 +32,9 @@ function Skilsjutopia() {
               </p>
           </div>
           <div className='bottom'>
-              <div className='backend dropdown' onClick={(e)=>{dropdownFn(0)}}>
+              <div className='backend dropdown'>
                   <div>
-                      <span className='name'>BACK END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                      <span className='name'  onClick={(e)=>{dropdownFn(0)}}>BACK END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                       <ul>
                           <Skillcionparts img = {"backend (1).png"} text={"JAVA"}/>
                           <Skillcionparts img = {"backend (2).png"} text={"Servlets"}/>
@@ -41,9 +43,9 @@ function Skilsjutopia() {
                       </ul>
                   </div>
               </div>
-              <div className='front dropdown' onClick={(e)=>{dropdownFn(1)}}>
+              <div className='front dropdown'>
                   <div>
-                      <span className='name'>FRONT END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                      <span className='name'  onClick={(e)=>{dropdownFn(1)}}>FRONT END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                       <ul>
                           <Skillcionparts img = {"front (10).png"} text={"JSP"}/>
                           <Skillcionparts img = {"front (8).png"} text={"HTML5"}/>
@@ -52,9 +54,9 @@ function Skilsjutopia() {
                       </ul>
                   </div>
               </div>
-              <div className='tool_one dropdown'  onClick={(e)=>{dropdownFn(2)}}>
+              <div className='tool_one dropdown' >
                     <div>
-                        <span className='name'>TOOL <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                        <span className='name'  onClick={(e)=>{dropdownFn(2)}}>TOOL <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
                         <ul>
                             <Skillcionparts img = {"tool (5).png"} text={"Eclipse"}/>
                             <Skillcionparts img = {"tool (3).png"} text={"FIGMA"}/>

@@ -17,6 +17,7 @@ function Section2() {
     if(window.innerWidth < 1100) return;
     setXycode({x:e.nativeEvent.layerX, y:e.nativeEvent.layerY });
   }
+
   let dropdownFn = (n) => {
     if(window.innerWidth > 1100) return; 
     let elem = document.querySelectorAll(".section2 > div > ul > li")[n];
@@ -36,8 +37,17 @@ function Section2() {
     
   }
 
+    useEffect(()=>{
+      if(window.innerWidth < 1100) {
+        dropdownFn(0);
+        document.querySelectorAll(".section2 > div > ul > li")[0].querySelector(".content").style.height =  window.innerWidth*1.4335 + "px";
+      }
+      
+    },[]);
+
 
     useEffect(()=>{
+        
         if( section2.current && document.querySelector(".section2")) {
             window.addEventListener("scroll",scrollFn);
         }else window.removeEventListener("scroll",scrollFn);
@@ -46,7 +56,7 @@ function Section2() {
             window.removeEventListener("scroll",scrollFn);
         }
         
-    },[location]);
+    },[location.pathname]);
 
     let scrollFn=()=>{
         if(!section2.current ) return

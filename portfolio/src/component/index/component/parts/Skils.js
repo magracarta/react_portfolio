@@ -10,7 +10,7 @@ function Skils({dropdownFn}) {
       setIcon(!icon);
       setTimeout(()=>{
         document.querySelector(".skils .content").style.height = document.querySelector(".skils .content > div").offsetHeight+1+"px";
-      },100)
+      },500)
     }
   return (
     <li className='skils'>

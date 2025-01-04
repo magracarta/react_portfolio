@@ -60,7 +60,7 @@ function Section4() {
                 freeMode={true}
                 modules={[Keyboard, Scrollbar, Navigation,FreeMode, Pagination]}
                 className="mySwiper"
-                scrollbar={true}
+                scrollbar={{ draggable: true }}
                 // navigation={true}
                 pagination={pagination}
             >

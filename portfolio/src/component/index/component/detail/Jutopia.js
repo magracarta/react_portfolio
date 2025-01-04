@@ -12,7 +12,7 @@ import Rolejutopia from './component/Rolejutopia';
 function Jutopia() {
    
   useEffect(()=>{
-    window.scrollTo({top:0});
+    window.scrollTo({top:0,behavior:"instant"});
   },[]);
 
   return (

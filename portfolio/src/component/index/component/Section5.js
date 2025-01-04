@@ -28,7 +28,7 @@ function Section5() {
         <div className='innerContainer'>
             <div className='title'>
                 <h2>RECORD</h2>
-                <p>저의 GITHUB와 노션으로 정리된 경력사항들을 소개합니다.</p>
+                <p>저의 GITHUB와 노션으로 정리된 {window.innerWidth<1100 && <br/>}경력사항들을 소개합니다.</p>
             </div>
             <div className='wrapbox'>
                 <a className='left' href='https://github.com/magracarta' target='_black' >

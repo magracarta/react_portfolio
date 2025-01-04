@@ -17,11 +17,13 @@
 }
 
 .mainPage .section01 .textTitle span.line {  display: block; width: 1px; height: 30px; background: var(--titlecolor); }
-.mainPage .section01 .textTitle .tag-container { display: flex; margin-top: 70px; }
-.mainPage .section01 .textTitle .tag-container .tag { font-size: 18px; display: block; width: 216px; text-align: center; padding: 26px 0; border-radius: 50px; background: var(--gray2); margin: 0 12.5px; position: relative;
+.mainPage .section01 .textTitle .tag-container { display: flex; margin-top: 50px; }
+.mainPage .section01 .textTitle .tag-container .tag { font-size: 18px; display: block; width: auto; text-align: center; padding: 26px 0; border-radius: 50px; 
+    /* background: var(--gray2);  */
+    margin: 0 12.5px; position: relative;
 transition: all .3s; top: 0;
 }
-.mainPage .section01 .textTitle .tag-container .tag:hover { top: -20px; }
+/* .mainPage .section01 .textTitle .tag-container .tag:hover { top: -20px; } */
 
 .mainPage .section01 .line-context { margin-top: 157px; width: 100%; font-size: 18px; font-weight: 500; }
 .mainPage .section01 .line-context p { margin: 0 0 12px; }
@@ -46,10 +48,15 @@ transition: all .3s; top: 0;
     .mainPage .section01 .textTitle h1 { position: relative; left: 1.2vw;  -webkit-text-stroke: 2px var(--titlecolor); color: var(--titlecolor); font-size: 49vw; font-weight: 900; 
         letter-spacing: 2vw; line-height: 1em;  }
 
-    .mainPage .section01 .textTitle span.line {  height: 5.55555555555556vw; margin: 11.11111111111111vw 0 16.11111111111111vw; }
+    .mainPage .section01 .textTitle span.line {  height: 5.55555555555556vw; margin: 11.11111111111111vw 0 16.11111111111111vw;
+    
+        margin: 9vw 0 10vw;
+    }
 
     .mainPage .section01 .textTitle .tag-container {  margin-top: 0; }
-    .mainPage .section01 .textTitle .tag-container .tag { font-size: 3.61111111111111vw; width: 28.61111111111111vw; padding: 4.44444444444444vw 0;  margin: 0 1.38888888888889vw; 
+    .mainPage .section01 .textTitle .tag-container .tag { font-size: 3.61111111111111vw;
+         /* width: 28.61111111111111vw; padding: 4.44444444444444vw 0;  */
+         margin: 0 1.38888888888889vw; 
         transition: unset; top: 0; }
     .mainPage .section01 .textTitle .tag-container .tag:hover { top: 0; }
 
@@ -59,7 +66,7 @@ transition: all .3s; top: 0;
     .mainPage .section01 .line-context { margin-top:17.77777777777778vw; font-size: 3.61111111111111vw;  }
     .mainPage .section01 .line-context p { margin: 0 0 2.77777777777778vw; }
     .mainPage .section01 .line-context .bottom { padding-top: 3.333vw; }
-    .mainPage .section01 .line-context .bottom span {  }
+    .mainPage .section01 .line-context .bottom span {  width: 19.44vw; }
 
  }
 

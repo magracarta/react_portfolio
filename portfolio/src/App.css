@@ -239,9 +239,25 @@ body { background: var(--background); color: var(--textcolor); }
     
 }
 
-.gotop { cursor: pointer; position: fixed; bottom: 80px; right: 60px; z-index: 0; background: var(--gray2); width: 70px; height: 70px; border-radius: 14px; display: flex; align-items: center; justify-content: center; z-index: 2; }
+.gotop { cursor: pointer; position: fixed; bottom: 80px; right: 60px; z-index: 0; background: var(--gray2); width: 70px; height: 70px; border-radius: 14px; display: flex; align-items: center; justify-content: center; z-index: 2; visibility: hidden; }
 .gotop img { mix-blend-mode: difference; }
 
+
+.header-wrap .header-top .menu-btn { display: flex; }
+.habergermenu { width: 19px; height: 19px; display: inline-block; position: relative; margin-right: 15px; }
+.habergermenu i { display: block; width: 100%; height: 1px; background: var(--titlecolor); position: absolute; transition: all .4s; }
+
+.header-wrap.sideOn .header-top .habergermenu i  { background-color: var(--background);  }
+
+.dark .header-wrap.sideOn .header-top .habergermenu i  { background-color: var(--titlecolor); }
+.habergermenu i:nth-child(1) { top: 0; }
+.habergermenu i:nth-child(2) { top: 50%; }
+.habergermenu i:nth-child(3) { bottom: 0; }
+
+
+.habergermenu.on i:nth-child(1) { top: calc(50% + 0px); transform: rotate(45deg); }
+.habergermenu.on i:nth-child(2) { opacity: 0; }
+.habergermenu.on i:nth-child(3) { bottom: calc(50% + 0px); transform: rotate(-45deg); }
 
 @media screen and (max-width : 1100px) {
     .gotop { width: 50px; height: 50px; bottom: 20px; right: 15px; border-radius: 8px; }

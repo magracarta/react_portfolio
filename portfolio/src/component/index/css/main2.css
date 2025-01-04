@@ -1,4 +1,4 @@
-.section2 { margin-top: 220px; border: 1px solid var(--titlecolor); border-left: none; border-right: none; }
+.section2 { margin-top: 150px; border: 1px solid var(--titlecolor); border-left: none; border-right: none; }
 
 
 
@@ -70,9 +70,9 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
 .section2 .bottom .tmi .content .text-wrap span { width: 8%; font-family: "Noto Sans KR"; }
 .section2 .bottom .tmi .content .text-wrap .textAni { width: 92%; overflow: hidden; height: 28px; margin-bottom: 17px; position: relative; }
 .section2 .bottom .tmi .content .text-wrap .textAni p {  white-space: nowrap; margin: 0; 
-    position: absolute; left: 0; animation: section2TextAni 8s linear infinite;
+    position: absolute; left: 0; animation: section2TextAni 13s linear infinite;
 }
-.section2 .bottom .tmi .content .text-wrap .textAni:nth-child(odd) p {  animation: section2TextAni 9s linear infinite;  }
+.section2 .bottom .tmi .content .text-wrap .textAni:nth-child(odd) p {  animation: section2TextAni 20s linear infinite;  }
 .section2 .bottom .tmi .content .text-wrap .textAni p:hover { animation-play-state: paused; }
 
 

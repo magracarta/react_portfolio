@@ -9,7 +9,8 @@ import Url from './component/Url';
 function Rentmon() {
   
   useEffect(()=>{
-    window.scrollTo({top:0});
+    
+    window.scrollTo({top:0,behavior:"instant"});
   },[]);
 
   return (
