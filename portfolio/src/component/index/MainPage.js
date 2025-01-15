@@ -5,6 +5,7 @@ import Section3 from './component/Section3'
 import Section4 from './component/Section4'
 import Section5 from './component/Section5'
 import {  useLocation } from 'react-router-dom'
+import AboutMe from './component/AboutMe'
 
 
 function MainPage() {
@@ -25,6 +26,9 @@ function MainPage() {
         {/* 섹션1 */}
         <Section1 />
         {/* 섹션1 */}
+        {/* 어바웃 미 */}
+        <AboutMe/>
+        {/* 어바웃 미 */}
         {/* 섹션2 */}
         <Section2 />
         {/* 섹션2 */}

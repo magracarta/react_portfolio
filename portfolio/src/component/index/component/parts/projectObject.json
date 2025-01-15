@@ -12,6 +12,7 @@
         "img" : "zutopia.png"
     }],
     "ETC":[
+       
         {
             "title":"[스터디] 2023 미니 메타버스",
             "content":["디자인","퍼블리싱"],
@@ -29,12 +30,28 @@
             "content":["퍼블리싱"],
             "img":"/image/etcimg (3).png",
             "url":"http://dasanju.kr/"
+        },{
+            "title":"[스터디] 슬라이드 애니메이션 연구 PC",
+            "content":["디자인","퍼블리싱"],
+            "img":"/image/study1.png",
+            "url":"http://alswn144.dothome.co.kr/VTslidetest/"
+        }, {
+            "title":"[경력] 핑거수트 JP 기획전",
+            "content":["퍼블리싱"],
+            "img":"/image/fingersuit1.png",
+            "url":"https://poised-magpie-c4b.notion.site/55f1ce6b29bb4e3094f686f6f881f81f"
         },
         {
-            "title":"[외주] 언아더 선데이 웹진",
+            "title":"[경력] 핑거수트 US 기획전",
             "content":["퍼블리싱"],
-            "img":"/image/etcimg (4).png",
-            "url":"https://anothersundaymag.com/"
+            "img":"/image/fingersuit4.png",
+            "url":"https://poised-magpie-c4b.notion.site/19db7da0993f4274a0b312937e36f0f3"
+        },
+        {
+            "title":"[경력] 핑거수트 국내몰 기획전",
+            "content":["퍼블리싱"],
+            "img":"/image/fingersuit5.png",
+            "url":"https://poised-magpie-c4b.notion.site/76a5d4a995c848208669b48b871b657a"
         },
         {
             "title":"2020년도 첫 번째 포트폴리오",

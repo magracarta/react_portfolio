@@ -19,32 +19,86 @@ function Skils({dropdownFn}) {
            <div>
               {!icon? 
                   <div className='text-wrap'>
-                  <p>
-                  JAVA<br/>
-                  JSP & SERVLET<br/>
-                  SPRING<br/>
-                  SPRING BOOT<br/>
-                  SPRING DATA JPA<br/>
-                  MyBatis<br/>
-                  ORACLE<br/>
-                  MySQL<br/>
-                  REACT<br/>
-                  HTML & CSS<br/>
-                  AJAX<br/>
-                  AXIOS
-                  </p>
-                  <p>
-                  JQUERY<br/>
-                  JAVASCRIPT<br/>
-                  Node.js<br/>
-                  Express<br/>
-                  </p>
+                   <ul>
+                    <li>
+                      <h4>-Frontend</h4>
+                      <div className='tagwrap'>
+                        <div className='tag'>HTML & CSS</div><div className='tag'>JQUERY</div><div className='tag'>JAVASCRIPT</div>
+                        <div className='tag'>REACT</div><div className='tag'>AXIOS</div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>-Backend</h4>
+                      <div className='tagwrap'>
+                        <div className='tag'>JAVA</div><div className='tag'>JSP & SERVLET</div><div className='tag'>SPRING</div>
+                        <div className='tag'>SPRING BOOT</div><div className='tag'>JPA</div><div className='tag'>MyBatis</div>
+                        <div className='tag'>Node.js</div><div className='tag'>Express</div><div className='tag'>AWS</div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>-Database</h4>
+                      <div className='tagwrap'>
+                        <div className='tag'>MySQL</div><div className='tag'>ORACLE</div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>-Tool</h4>
+                      <div className='tagwrap'>
+                      <div className='tag'>Visual studio</div>
+                      <div className='tag'>Eclipse</div>
+                      <div className='tag'>Intellij</div>
+                        <div className='tag'>FIGMA</div><div className='tag'>Photoshop</div><div className='tag'>Illustrator</div>
+                      </div>
+                    </li>
+                   </ul>
                   </div>
                   :
                 <div className='icon'>
                   <div>
                       <ul>
-                        {iconarray.map((item)=> <li key={item}><img src={`/image/icon/icon (${item}).png`}/></li>)}
+                        <li>
+                          <h4>-Frontend</h4>
+                          <div className='tagwrap'>
+                            <img src={`/image/icon/icon (6).png`}/>
+                            <img src={`/image/icon/icon (7).png`}/>
+                            <img src={`/image/icon/icon (9).png`}/>
+                            <img src={`/image/icon/icon (4).png`}/>
+                            <img src={`/image/icon/icon (11).png`}/>
+                          </div>
+                        </li>
+                        <li>
+                          <h4>-Backend</h4>
+                          <div className='tagwrap'>
+                            <img src={`/image/icon/icon (22).png`}/>
+                            <img src={`/image/icon/icon (17).png`}/>
+                            <img src={`/image/icon/icon (16).png`}/>
+                            <img src={`/image/icon/icon (21).png`}/>
+                            <img src={`/image/icon/icon (14).png`}/>
+                            <img src={`/image/icon/icon (23).png`}/>
+                            <img src={`/image/icon/icon (24).png`}/>
+                            <img src={`/image/icon/icon (25).png`}/>
+                          </div>
+                        </li>
+                        <li>
+                          <h4>-Database</h4>
+                          <div className='tagwrap'>
+                            <img src={`/image/icon/icon (19).png`}/>
+                            <img src={`/image/icon/icon (26).png`}/>
+                          </div>
+                        </li>
+                        <li>
+                          <h4>-Tool</h4>
+                          <div className='tagwrap'>
+                            <img src={`/image/icon/icon (1).png`}/>
+                            <img src={`/image/icon/icon (8).png`}/>
+                            <img src={`/image/icon/icon (20).png`}/>
+                            <img src={`/image/icon/icon (2).png`}/>
+                            <img src={`/image/icon/icon (27).png`}/>
+                            <img src={`/image/icon/icon (28).png`}/>
+                          </div>
+                        </li>
+
+
                       </ul>
                   </div>
                 </div>

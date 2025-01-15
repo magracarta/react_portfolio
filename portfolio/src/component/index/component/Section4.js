@@ -43,7 +43,7 @@ function Section4() {
             {window.innerWidth > 1100?
                 <div className='left_title'>
                     <h2>ETC</h2>
-                    <p>개인적으로 제작한 작업물과<br/>퍼블리싱 외주 작업물들을 소개합니다.</p>
+                    <p>개인적으로 제작한 작업물과<br/>퍼블리싱 외주 및 기획전 작업물들을<br/>소개합니다.</p>
                     {/* <span className='slideIndex' ref={pageindex}></span> */}
                 </div>:""
             }
@@ -53,7 +53,7 @@ function Section4() {
                 spaceBetween={15}
                 breakpoints={{
                     1100: {
-                      slidesPerView: 3,
+                      slidesPerView: 3.8,
                       spaceBetween:30
                     },
                 }}
@@ -67,7 +67,7 @@ function Section4() {
                 {window.innerWidth<1100?<SwiperSlide>
                     <div className='titleslide'>
                         <h2>ETC</h2>
-                        <p>개인적으로 제작한 작업물과<br/>퍼블리싱 외주 작업물들을<br/>소개합니다.</p>
+                        <p>개인적으로 제작한 작업물과<br/>퍼블리싱 외주 및 기획전 작업물들을 소개합니다.</p>
                     </div>
                     </SwiperSlide>:""}
                 {etcobj.ETC.map((item, idx)=>{

@@ -70,3 +70,8 @@
     .section4.on .titleslide h2 { transform: translate(0, 0); opacity: 1; } 
 
 }
+
+
+@media screen and (min-width : 1100px) {
+    .section4 .slide-container .swiper { padding-right:  60px; }
+}
