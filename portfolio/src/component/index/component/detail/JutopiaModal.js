@@ -9,14 +9,14 @@ import Skilsjutopia from './component/Skilsjutopia';
 import Rolejutopia from './component/Rolejutopia';
 
 
-function Jutopia() {
+function JutopiaModal() {
    
   useEffect(()=>{
-    window.scrollTo({top:0,behavior:"instant"});
+    // window.scrollTo({top:0,behavior:"instant"});
   },[]);
 
   return (
-    <div style={{position:"relative"}}>
+    <div style={{position:"relative"}} data-lenis-prevent-wheel data-lenis-prevent-touch>
       <div className="topline"></div>
       <div className='detailcontainer'>
         <div>
@@ -29,4 +29,4 @@ function Jutopia() {
   )
 }
 
-export default Jutopia
+export default JutopiaModal

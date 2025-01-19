@@ -45,7 +45,7 @@ function Section5() {
                 <a className='right' href='https://poised-magpie-c4b.notion.site/f254941208fc41dd9c99f3b31d233f07?pvs=74' target='_black' >
                     <div>
                         <div className='top'>
-                            <h3>CAREER NOTION</h3>
+                            <h3>NOTION</h3>
                             <p>에코마케팅에서의 경력과 작업물들이 정리되어 있습니다.</p>
                         </div>
                         <div className='bottom'>

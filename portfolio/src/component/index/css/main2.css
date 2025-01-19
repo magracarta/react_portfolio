@@ -73,9 +73,9 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
 
 .section2 .bottom .tmi { width: 21%;  }
 .section2 .bottom .tmi .content {   }
-.section2 .bottom .tmi .content .text-wrap {  display: flex; margin: 0 -20px 0 0; }
+.section2 .bottom .tmi .content .text-wrap {  display: flex; margin: 0 -20px 0 0; margin-bottom: 17px;}
 .section2 .bottom .tmi .content .text-wrap span { width: 8%; font-family: "Noto Sans KR"; }
-.section2 .bottom .tmi .content .text-wrap .textAni { width: 92%; overflow: hidden; height: 28px; margin-bottom: 17px; position: relative; }
+.section2 .bottom .tmi .content .text-wrap .textAni { width: 92%; overflow: hidden; height: 28px;  position: relative; }
 .section2 .bottom .tmi .content .text-wrap .textAni p {  white-space: nowrap; margin: 0; 
     position: absolute; left: 0; animation: section2TextAni 13s linear infinite;
 }
@@ -83,10 +83,11 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
 .section2 .bottom .tmi .content .text-wrap .textAni p:hover { animation-play-state: paused; }
 
 .section2 .bottom .tmi .content .text-wrap  {position: relative;  }
-.section2 .bottom .tmi .content .text-wrap small { display: none; }
-.section2 .bottom .tmi .content .text-wrap:hover small { position: absolute; top: -1%; left: calc(20px + 50%); transform: translate(-50% , 0); background: rgba(255, 255, 255, 0.3); width: calc(100% - 75px); z-index: 2; padding: 10px; border: 1px solid var(--gray); border-radius: 5px;
-    backdrop-filter: blur(15px); display: block; font-size: 15px;
+.section2 .bottom .tmi .content .text-wrap small { display: none; 
+    position: absolute; top: 50%; left: calc(20px + 50%); transform: translate(-50% ,-50% ); background: rgba(255, 255, 255, 0.3); width: calc(100% - 75px); z-index: 2; padding: 10px; border: 1px solid var(--gray); border-radius: 5px;
+    backdrop-filter: blur(15px); font-size: 15px;
 }
+.section2 .bottom .tmi .content .text-wrap:hover small {display: block; }
 
 
 @media screen and (min-width : 1100px) {
@@ -208,8 +209,8 @@ position: relative; z-index: 2; justify-content: space-between; font-size: 20px;
     .section2 .bottom .tmi .content { position: relative; }
     .section2 .bottom .tmi .content::before { content: ""; width: 100%; height: 1px; background: var(--titlecolor); position: absolute; bottom: 0; left: 0; }
     
-.section2 .bottom .tmi .content .text-wrap:hover small {top: -1%; left: calc(15px + 50%); transform: translate(-50% , 0); background: rgba(255, 255, 255, 0.3); width: calc(100% - 100px); z-index: 2; padding: 10px; border: 1px solid var(--gray); border-radius: 5px;
-    backdrop-filter: blur(15px); display: block; font-size: 15px;
+.section2 .bottom .tmi .content .text-wrap:hover small {left: calc(15px + 50%);  width: calc(100% - 100px);  padding: 10px; border-radius: 5px;
+     font-size: 13px;
 }
 }
 

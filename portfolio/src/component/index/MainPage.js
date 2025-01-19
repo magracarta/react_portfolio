@@ -2,13 +2,13 @@ import React, { useEffect } from 'react'
 import Section1 from './component/Section1'
 import Section2 from './component/Section2'
 import Section3 from './component/Section3'
-import Section4 from './component/Section4'
 import Section5 from './component/Section5'
 import {  useLocation } from 'react-router-dom'
 import AboutMe from './component/AboutMe'
+import Work from './component/Work'
 
 
-function MainPage() {
+function MainPage({lenis , setLenis}) {
   let location = useLocation();
   useEffect(()=>{
     console.log(location.pathname)
@@ -16,7 +16,7 @@ function MainPage() {
     setTimeout(()=>{
       if(window.innerWidth < 1100){
         let pathname = window.location.href.split("#")[1];
-        if(pathname)window.scrollTo({top: document.querySelector(`#${pathname}`).offsetTop-50});
+        if(pathname && pathname!="none")window.scrollTo({top: document.querySelector(`#${pathname}`).offsetTop-50});
       }
     },500)
 
@@ -33,10 +33,10 @@ function MainPage() {
         <Section2 />
         {/* 섹션2 */}
         {/* 섹션3 */}
-        <Section3 />
+        <Section3 lenis={lenis} setLenis={setLenis} />
         {/* 섹션3 */}
         {/* 섹션4 */}
-        <Section4 />
+        <Work/>
         {/* 섹션4 */}
         {/* 섹션5 */}
         <Section5/>

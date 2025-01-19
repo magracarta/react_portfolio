@@ -34,7 +34,7 @@ function Skilsjutopia() {
           <div className='bottom'>
               <div className='backend dropdown'>
                   <div>
-                      <span className='name'  onClick={(e)=>{dropdownFn(0)}}>BACK END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                      <span className='name'  onClick={(e)=>{dropdownFn(0)}}>BACK END <i className='arrow'></i></span>
                       <ul>
                           <Skillcionparts img = {"backend (1).png"} text={"JAVA"}/>
                           <Skillcionparts img = {"backend (2).png"} text={"Servlets"}/>
@@ -45,7 +45,7 @@ function Skilsjutopia() {
               </div>
               <div className='front dropdown'>
                   <div>
-                      <span className='name'  onClick={(e)=>{dropdownFn(1)}}>FRONT END <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                      <span className='name'  onClick={(e)=>{dropdownFn(1)}}>FRONT END <i className='arrow'></i></span>
                       <ul>
                           <Skillcionparts img = {"front (10).png"} text={"JSP"}/>
                           <Skillcionparts img = {"front (8).png"} text={"HTML5"}/>
@@ -56,7 +56,7 @@ function Skilsjutopia() {
               </div>
               <div className='tool_one dropdown' >
                     <div>
-                        <span className='name'  onClick={(e)=>{dropdownFn(2)}}>TOOL <img src='/image/arrowBtn.svg' alt='arrowBtn.svg'/></span>
+                        <span className='name'  onClick={(e)=>{dropdownFn(2)}}>TOOL <i className='arrow'></i></span>
                         <ul>
                             <Skillcionparts img = {"tool (5).png"} text={"Eclipse"}/>
                             <Skillcionparts img = {"tool (3).png"} text={"FIGMA"}/>

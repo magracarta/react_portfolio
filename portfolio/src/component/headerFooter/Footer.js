@@ -5,12 +5,15 @@ function Footer() {
   let gotopbtn = useRef(null);
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
-      if(window.scrollY <= 100) gotopbtn.current.style.visibility = "hidden";
-      else gotopbtn.current.style.visibility = "visible";
+      if (gotopbtn.current) {
+        if(window.scrollY <= 100) gotopbtn.current.style.visibility = "hidden";
+        else gotopbtn.current.style.visibility = "visible";
+
+      }
     });
   },[]);
   let gotop = ()=>{
-    window.scrollTo({top:0});
+    window.scrollTo({top:0 , behavior: "smooth"});
   }
   return (
     <>

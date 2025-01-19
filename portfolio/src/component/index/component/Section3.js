@@ -4,7 +4,7 @@ import projectObject from './parts/projectObject.json'
 import "../css/main3.css"
 import { useLocation } from 'react-router-dom';
 
-function Section3() {
+function Section3({lenis , setLenis}) {
     let section3 = useRef(null);
     const location = useLocation();
   useEffect(()=>{
@@ -18,6 +18,16 @@ function Section3() {
     }
     
   },[location]);
+    // 모달 내부 스크롤에 Lenis 적용되지 않도록 스타일로 처리
+    const handleModalOpen = () => {
+      // 모달이 열리면 Lenis의 smoothWheel을 비활성화하여 기본 스크롤을 사용하도록
+      document.body.style.overflow = "hidden";  // 페이지 스크롤 비활성화
+    };
+  
+    const handleModalClose = () => {
+      // 모달이 닫히면 Lenis의 smoothWheel을 다시 활성화
+      document.body.style.overflow = "auto";  // 페이지 스크롤 재활성화
+    };
 
   let scrollFn=()=>{
     if(!section3.current ) return
@@ -51,7 +61,7 @@ function Section3() {
         <div className='project-list'>
             <ul>
                 {projectObject.PROJECT.map((item, index)=>{
-                   return <ProjectListParts key={index} item={item} index={index} allnum={projectObject.PROJECT.length} />
+                   return <ProjectListParts key={index} item={item} index={index} allnum={projectObject.PROJECT.length} lenis={lenis} setLenis={setLenis} />
                 })}
             </ul>
         </div>
