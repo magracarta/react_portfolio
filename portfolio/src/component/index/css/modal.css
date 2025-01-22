@@ -119,13 +119,13 @@
 .detailskill .bottom > div > div .name { font-size: 14px; color: var(--titlecolor); display: block; margin-bottom: 16px; font-weight: 500; width: 100%; }
 .detailskill .bottom > div > div .name img { display: none; }
 .detailskill .bottom > div > div ul { display: flex; flex-wrap: wrap; gap: 10px;}
-.detailskill .bottom > div > div ul > li { width: calc(33.3333% - 10px); text-align: center; margin-bottom: 20px; }
+.detailskill .bottom > div > div ul > li { width: calc(29% - 10px); text-align: center; margin-bottom: 20px; }
 .detailskill .bottom > div > div ul > li img { width: 100%; }
 .detailskill .bottom > div > div ul > li span { font-size: 11px; display: block; color: var(--titlecolor); margin-top: 8px; }
 
 .detailskill .bottom > div.tool { width: calc(40% - 16.666px); }
 .detailskill .bottom > div.tool .bottom-in { margin-top: 36px; }
-.detailskill .bottom > div.tool ul > li { width: calc(25% - 10px); text-align: center; }
+.detailskill .bottom > div.tool ul > li { width: calc(22.5% - 10px); text-align: center; }
 
 
 @media screen and (max-width : 1100px) {
