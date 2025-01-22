@@ -1,0 +1,32 @@
+{
+    "mainbanner":[
+        {
+            "category" : "커리어",
+            "title" : "MIXSOON",
+            "content" : "순수 원료주의 스킨케어 브랜드 믹순의 싱가포르 개편작업 및 국내몰 유지보수작업에 참여했습니다. 국내몰은 Cafe24 해외몰은 shopify플랫폼으로 운영되었습니다.",
+            "char":[
+                "해외몰 : shopify 기반 반응형",
+                "국내 : cafe24기반 pc, mo 적응형"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "cafe24.png", "text":"CAFE24"},
+                {"img": "shopify.png", "text":"SHOPIFY"}
+            ],
+            "image": "mixsoon.png"
+            
+        }
+    ],
+    "dropdown":[
+        {
+            "title" : "믹순 SG 개편작업 - 2024.1",
+            "text" : "<div><p>믹순 싱가포르 개편작업에 참여하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/4e6e2aec4a8846a6859e2f37f1625864'>상세페이지 (퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/FAQ-3358d327a72148a2b751ee163ce904cf'>FAQ페이지 제작 (퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/ca043d15431a44aaa74c909d4cea5a2b'>컬렉션페이지 개편 (퍼블리싱 100%)</a></li></ul></div>"
+        },
+        {
+            "title" : "믹순 국내 스토키스트 네이버지도앱 작업 - 2024.1",
+            "text" : "<div><p>믹순 국내 팝업스토어 진행 시, 운영 중인 팝업 스토어를 지도에 표시해주는 작업을 진행하였으며, 3명의 퍼블리셔와 함께 협업하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/ce946590ce7949628a58330a42dd548c'>검색기능 추가 및 네이버 지도앱 연결 작업 (퍼블리싱 40%)</a></li></ul></div>"
+        }
+    ]
+}

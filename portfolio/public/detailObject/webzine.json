@@ -1,0 +1,27 @@
+{
+    "mainbanner":[
+        {
+            "category" : "외주",
+            "title" : "웹진",
+            "content" : "퍼블리셔로서 디자이너와 협업하여 언아더 선데이의<br/>전시 검색 플랫폼사이트 제작 작업을 진행했습니다.",
+            "char":[
+                "- 선을 이용한 애니메이션 및 레이아웃 활용",
+                "- 로그인 및 회원가입 정규 표현식 기능 구현"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"}
+            ],
+            "image": "webzine.png"
+            
+        }
+        
+    ],
+    "dropdown":[
+        {
+            "title" : "링크",
+            "text" : "<a  target='_blank' href= 'https://anothersundaymag.com'>사이트로 바로가기 ></a>"
+        }
+    ]
+}

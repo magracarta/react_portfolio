@@ -94,7 +94,7 @@ function SideMenu({darkModeClick , darkmode, sidemenu , setSidemenu}) {
                     }}>
                         <MenuAtag text={"HOME"} clickFn={clickMenu} idx = {"1"}/>
                         <MenuAtag text={"PROJECT"} clickFn={clickMenu} idx = {"2"} />
-                        <MenuAtag text={"ETC"} clickFn={clickMenu} idx = {"3"} />
+                        <MenuAtag text={"WORK"} clickFn={clickMenu} idx = {"3"} />
                         <MenuAtag text={"RECORD"} clickFn={clickMenu} idx = {"4"} />
                         <div className='mouseMove' style={{transform:`translate(${xycode.x}px , ${xycode.y}px)`}} ><img src='/image/blackarrow.svg' alt='blackarrow.svg'/><span>{text}</span></div>
                     </ul>

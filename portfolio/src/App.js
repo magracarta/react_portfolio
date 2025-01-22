@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div onMouseMove={(e)=>{
-      setMousexy({ x: e.pageX, y: e.pageY });
+     if(window.innerWidth > 1100) setMousexy({ x: e.pageX, y: e.pageY });
     }}>
       <Header />
         <Routes>

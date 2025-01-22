@@ -6,9 +6,10 @@ import WorkDetail from './WorkDetail';
 import ReactModal from 'react-modal';
 
 function Work({lenis , setLenis}) {
-    let [wopen , setwopen] = useState(true);
+    let [wopen , setwopen] = useState(false);
     let [tag, setTag] = useState("0");
     let [cg, setcg] = useState("0");
+    let [jsonfile, setJsonFile] = useState("");
     let section4 = useRef(null);
     const location = useLocation();
 
@@ -46,7 +47,7 @@ function Work({lenis , setLenis}) {
         // else section4.current.classList.remove("on");
     }
   return (
-    <div className='section4' id="ETC" ref={section4}>
+    <div className='section4' id="WORK" ref={section4}>
         <div className='innerContainer'>
             <div className='title'>
                 <h2>WORK</h2>
@@ -63,12 +64,16 @@ function Work({lenis , setLenis}) {
         <div className='work-continaer'>
             <ul>
                 {workDats.work.map((el, idx)=>{
-                   
-                    return <li style={{transition: `all  ${0.8}s ${0.3*idx}s`}} key={el.title} className={cg==="0" ||el.cg === cg? "show":"hidden"}>
-                            <div>
-                                <img src={`image/workThumnail/${el.thumbnail}`} alt={el.thumbnail}/>
-                            </div>
-                          </li>
+                    return <li style={{transition: `all  ${0.8}s ${0.3*idx}s`}} key={el.title} className={cg==="0" ||el.cg === cg? "show":"hidden"}
+                        onClick={()=>{
+                            setwopen(true);
+                            setJsonFile(el.title);
+                        }}
+                    >
+                                <div>
+                                    <img src={`image/workThumnail/${el.thumbnail}`} alt={el.thumbnail}/>
+                                </div>
+                           </li>
                 })}
             </ul>
         </div>
@@ -78,10 +83,12 @@ function Work({lenis , setLenis}) {
             ariaHideApp={false}
         >
             <div className='closeBtn' onClick={()=>{setwopen(false)}}><i></i></div>
-            <WorkDetail/>
+            <WorkDetail file={`${jsonfile}.json`} />
         </ReactModal>
     </div>
   )
 }
+
+
 
 export default Work

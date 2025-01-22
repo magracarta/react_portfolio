@@ -49,6 +49,70 @@
     .section4 .innerContainer .work-tag span { font-size: 13px; padding: 8.2px 19px; margin: 0 2.5px; }
     .section4 .work-continaer { margin-top: 30px; }
     .section4 .work-continaer ul li { width: 50%; }
-    
-    
+}
+
+
+/* work 디테일 */
+.work .function {  }
+.work .function .name {  }
+.work .function ul { width: calc(50% - 20px); }
+.work .function ul.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.work .function ul > li { list-style: none !important; margin-bottom: 5px !important; }
+.work .function ul.skills > li { text-align: center; }
+.work .function ul.skills > li span { font-size: 10px; }
+.work .function ul.skills > li img { max-width: 72px; }
+
+.dropdownContainer { margin-top: 100px; padding-bottom: 100px; }
+.dropDownWrap { margin: 0 var(--leftright); border-top:1px solid var(--titlecolor) ; }
+.dropDownWrap:last-child { border-bottom:1px solid var(--titlecolor) ; }
+.dropDownWrap .titlebutton { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; cursor: pointer; }
+.dropDownWrap .titlebutton span { font-weight: 600; color: var(--titlecolor); }
+.dropDownWrap .titlebutton i { position: relative; width: 13px; height: 7px; display: block; transform: rotate(0deg); }
+.dropDownWrap .titlebutton i::after ,
+.dropDownWrap .titlebutton i::before  { content: ""; position: absolute; left: 0; top: calc(50% - 0px); width: 57%; height: 1px; background: var(--titlecolor); transform: rotate(45deg); }
+.dropDownWrap .titlebutton i::before {left: auto; right: 0; transform: rotate(-45deg); }
+
+.dropDownWrap .textContent {  overflow: hidden; transition: all 0.6s; }
+.dropDownWrap .textContent > div {  padding: 5px 0 40px; }
+.dropDownWrap .textContent p { margin: 0 15px 10px 0; }
+.dropDownWrap .textContent small { font-size: inherit; color: var(--gray4); display: block; margin-top: 30px; }
+.dropDownWrap .textContent ul { margin: 30px 0 0; }
+.dropDownWrap .textContent ul li:first-child { list-style: none; margin-bottom: 5px; }
+.dropDownWrap .textContent ul li { margin: 0 0 5px; list-style: disc; list-style-position: inside; }
+.dropDownWrap .textContent ul li a { text-decoration: underline; margin-left: -5px; }
+
+.work .detailcontainer .mainbanner .left .title h2 { letter-spacing: -3px; width: 48%;}
+.dropDownWrap .titlebutton span { font-size: 16px; }
+.dropDownWrap .textContent * { font-size: 14px; }
+@media screen and (max-width : 1100px) {
+    .work .function ul { width: 100%;}
+    .work .detailcontainer .mainbanner .left .title small { width: 100%; text-align: center; display: block; }
+    .work .detailcontainer .mainbanner .left .title h2 { width: 100%;  font-weight: 500; letter-spacing: -2px; font-size: 16.7vw;
+        margin-bottom: 20px; }    
+    .work .detailcontainer .mainbanner .left .title .content p { margin-top: 40px; }
+    .detailcontainer {
+        margin-top: 50px;
+    }
+    .dropDownWrap { margin: 0; }
+    .dropDownWrap .titlebutton ,
+    .dropDownWrap .textContent { padding-left:  15px; padding-right:  15px; }
+    .dropDownWrap .titlebutton span { font-size: 15px; }
+    .dropDownWrap .textContent * { font-size: 13px; }
+}
+
+
+@media screen and (min-width : 1100px) {
+    .ReactModal__Content {  }
+    .work .detailcontainer .mainbanner { min-height: 650px; }
+        
+    .work .detailcontainer .mainbanner .left .title h2 { letter-spacing: -1px; }
+}
+
+.loadingAnimation { display: flex; 
+    justify-content: center;
+    align-items: center; }
+.loadingAnimation img { width: 100px; }
+
+@media screen and (max-width : 1100px) {
+    .loadingAnimation img { width: 50px; }
 }

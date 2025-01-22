@@ -1,0 +1,30 @@
+{
+    "mainbanner":[
+        {
+            "category" : "커리어",
+            "title" : "andar",
+            "content" : "편안한 디자인의 애슬레저 브랜드 안다르의 싱가포르 런칭작업에 참여했습니다.<br/>shopify플랫폼으로 운영되었습니다. 이 브랜드에서 UI/UX 디자인과 유지보수 그리고 기획전 퍼블리싱을 담당했습니다.",
+            "char":[
+                "해외몰 : shopify 기반 반응형"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "shopify.png", "text":"SHOPIFY"}
+            ],
+            "image": "andar.png"
+            
+        }
+    ],
+    "dropdown":[
+        {
+            "title" : "안다르 SG 메인페이지, 컬렉션페이지 개편  - 2023.10",
+            "text" : "<div><p>안다르 런칭 후 사용성 개선을 위해 개편한 작업으로, 컬렉션 페이지에 LNB 기능을 추가하고, 사이즈 가이드 및 레깅스 추천 슬라이드를 구현하여 사용자의 탐색을 용이하게 했습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/sg-5feec4773efa4bcab2e63e3a10b23761'>메인페이지(퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/b6d1ab77c62b43848221b2a17358bb98'>컬렉션페이지 퍼블리싱(100%)</a></li></ul></div>"
+        },
+        {
+            "title" : "안다르 SG 런칭 - 2023.7",
+            "text" : "<div><p>안다르 싱가포르 런칭에 참여하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/a71eb0f4971a47e28d25c28a85d52155'>상세페이지 (디자인 50%, 퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/GNB-d314490dddb44c8091db3048d6c72ad2'>GNB (퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/54b40ca3ce2948ea8a5462cfbf8d3cf6'>어카운트페이지 (퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/400eb11e9eea408c9ac323aa85d2c967'>사이즈가이즈 (디자인, 퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/a919aea0cca4447ebf42cf1b50bc5481'>햄거버메뉴 (디자인, 퍼블리싱 100%)</a></li></ul></div>"
+        }
+    ]
+}

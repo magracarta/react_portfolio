@@ -1,0 +1,30 @@
+{
+    "mainbanner":[
+        {
+            "category" : "커리어",
+            "title" : "Daily&Co",
+            "content" : "데일리앤코 싱가포르 런칭작업에 참여했습니다.<br/>shopify플랫폼으로 운영되었습니다. 이 브랜드에서 UI/UX 디자인과 유지보수 그리고 기획전 퍼블리싱을 담당했습니다.",
+            "char":[
+                "해외몰 : shopify 기반 반응형"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "shopify.png", "text":"SHOPIFY"}
+            ],
+            "image": "dailynco.png"
+            
+        }
+    ],
+    "dropdown":[
+        {
+            "title" : "데일리앤코 SG 런칭 - 2023.7",
+            "text" : "<div><p>데일리앤코 싱가포르 런칭작업에 참여하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/a3c39f18656c4eb78b61e0a7ef17e934'>컨텐츠 페이지 (디자인 ,퍼블리싱 100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/fc891ba8685b44d88a9d8aad8a635535'>브랜드 스토리 (퍼블리싱 100%)</a></li></ul></div>"
+        },
+        {
+            "title" : "상세페이지 : 회원가 가격 코드 추가 - 2024.1",
+            "text" : "<div><p>쇼피파이내에 멤버 회원가의 할인이 표기되지 않는 이슈가 있어 멤버 회원가 세팅 시 자동으로 가격이 계산되도록 작업하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/f6f6bf1ba2c14b2b818e5a292813939c'>상세페이지 - 할인 가격 코드 추가 (퍼블리싱 100%)</a></li></ul></div>"
+        }
+    ]
+}

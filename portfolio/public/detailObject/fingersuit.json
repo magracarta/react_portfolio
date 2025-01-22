@@ -1,0 +1,48 @@
+{
+    "mainbanner":[
+        {
+            "category" : "커리어",
+            "title" : "FINGERSUIT",
+            "content" : "패션 네일 브랜드로 국내 해외로 런칭한 브랜드입니다. 이 브랜드에서 UI/UX 디자인과 유지보수 그리고 기획전 퍼블리싱을 담당했습니다.<br/><br/>런칭한 국가로는 US, JP, TW, KR로 현재는 JP와 KR만 운영 중입니다. 해외몰은 shopify플랫폼으로 국내는 cafe24로 운영되었습니다.",
+            "char":[
+                "해외몰 : shopify 기반 반응형",
+                "국내 : cafe24기반 pc, mo 적응형"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "cafe24.png", "text":"CAFE24"},
+                {"img": "shopify.png", "text":"SHOPIFY"}
+            ],
+            "image": "fingersuit.png"
+            
+        }
+    ],
+    "dropdown":[
+        {
+            "title" : "핑거수트 JP 컬렉션페이지 개편 작업 - 2023.3",
+            "text" : "<div><p>카페24에서는 제공되지만 쇼피파이에서는 제공되지 않는 카테고리 내 카테고리를 플랫폼 위젯을 활용하여 새롭게 개발하여 사용자 경험을 개선하였습니다. 또한, 네비게이션 세팅을 활용해 카테고리 내 카테고리 뎁스를 추가하였습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/9956a1d94b3141c1ae254bdc637ac561'>컬렉션 페이지(디자인, 퍼블리싱 100%)</a></li></ul></div>"
+        },
+        {
+            "title" : "핑거수트 해외몰 US 상세, 메인 개편  - 2022.5",
+            "text" : "<div><p>미국 시장의 문화적 특성을 반영하여 브랜드에 대한 설명을 강화한 디자인으로 UI/UX를 개편하고 구현하였습니다. (디자인, 퍼블리싱 담당 참여율 - 100% )</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/03bf31ff769742029dfa47be21335e7b'>메인 페이지</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/3359fea438914c108ebe6250647b20b4'>상세 페이지</a></li></ul><small>** 현재 US는 운영되지 않는 점 참고 부탁드립니다.</small></div>"
+        },
+        {
+            "title" : "핑거수트 US 유지보수 및 페이지 제작 - 2022",
+            "text" : "<div><p>핑거수트에서 필요했던 랜딩 페이지들을 제작했습니다.</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/67474bfe132d482e879e37b56a8e9fe9'>네일 쉐이프 소개 페이지(퍼블리싱100%)</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/430f4c1a44644efa8f4f315e3f457d13'>리뷰 페이지 개편(디자인, 퍼블리싱100%)</a></li></ul></div>"
+        },
+        {
+            "title" : "핑거수트 US 플로팅 액션 작업 - 2021.9",
+            "text" : "<div><p>양쪽으로 산개되어 있어 사용성이 불편하고 콘텐츠를 가리던 플로팅 버튼에서 플로팅 액션 버튼으로 수정하여 사용성을 개선하였습니다.(디자인, 퍼블리싱 담당 참여율 - 100% )</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/3c3b6839eb614b509ee0d5f4dc32b3e4'>플로팅액션작업</a></li></ul></div>"
+        },
+        {
+            "title" : "핑거수트 해외몰 US/JP/TW 런칭 - 2021.5",
+            "text" : "<div><p>초기 핑거수트 사이트 런칭과정 참여 했습니다. ( 퍼블리싱 담당 참여율 - 100% )</p></div>"
+        },
+        {
+            "title" : "핑거수트 기획전",
+            "text" : "<div><p>핑거수트JP 에서 작업해온 기획전 작업물입니다. (퍼블리싱 100%)</p><ul><li>관련링크</li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/55f1ce6b29bb4e3094f686f6f881f81f'>JP 기획전</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/55f1ce6b29bb4e3094f686f6f881f81f'>US 기획전</a></li><li><a target='_blank' href='https://poised-magpie-c4b.notion.site/b2b0ec6b82a040428c3ed49747dbd2fb'>kr 기획전</a></li></ul></div>"
+        }
+    ]
+}

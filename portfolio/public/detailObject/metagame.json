@@ -1,0 +1,27 @@
+{
+    "mainbanner":[
+        {
+            "category" : "스터디",
+            "title" : "META GAME",
+            "content" : "에코마케팅 디자인팀 내부에서 진행했던 스터디로, 네일을 판매하는 미니 메타버스를 소개합니다. ",
+            "char":[
+                "- 캐릭터 및 배경 그래픽작업",
+                "- 가상으로 인기그룹 뉴진스섭외하여 브랜드 홍보"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"}
+            ],
+            "image": "metagame.png"
+            
+        }
+        
+    ],
+    "dropdown":[
+        {
+            "title" : "링크",
+            "text" : "<a  target='_blank' href= 'https://magracarta.github.io/javascript/project/metagame/index.html'>사이트로 바로가기 ></a>"
+        }
+    ]
+}

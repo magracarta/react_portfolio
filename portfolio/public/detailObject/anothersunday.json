@@ -1,0 +1,27 @@
+{
+    "mainbanner":[
+        {
+            "category" : "외주",
+            "title" : "ANOTHER SUNDAY",
+            "content" : "퍼블리셔로서 디자이너와 협업하여 언아더 선데이의<br/>회사소개 사이트를 제작 작업을 진행했습니다.",
+            "char":[
+                "- 퍼블리셔로서 디자이너와 협업하여 설치 예술",
+                "- 구글 스프레드시트(Google Spreadsheet)를 활용하여 이메일 전송 기능 구현"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"}
+            ],
+            "image": "anothersunday.png"
+            
+        }
+        
+    ],
+    "dropdown":[
+        {
+            "title" : "링크",
+            "text" : "<a target='_blank' href= 'https://anothersun.day/'>사이트로 바로가기 ></a>"
+        }
+    ]
+}

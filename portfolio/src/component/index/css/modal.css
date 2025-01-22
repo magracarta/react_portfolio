@@ -35,7 +35,7 @@
 
 .detailcontainer .mainbanner {  margin: 0 var(--leftright); display: flex; justify-content: flex-end; padding-top: 42px; }
 .detailcontainer .mainbanner .left { position: absolute; left: var(--leftright); top: 13%; width: calc(100% - var(--leftright)*2); transform: translate(0,-0%); }
-.detailcontainer .mainbanner .left .title { background: var(--gray3); padding: 25px 25px 48px; }
+.detailcontainer .mainbanner .left .title { background: var(--gray3); padding: 25px 25px 48px; border-radius: 5px; }
 .detailcontainer .mainbanner .left .title h2 { color: var(--titlecolor); font-size: 64px; margin: 0; line-height: 1em; width: 50%; }
 .detailcontainer .mainbanner .left .title .content { width: 45%; }
 .detailcontainer .mainbanner .left .title .content p { margin: 0; margin-top: 15px; font-size: 14px; }

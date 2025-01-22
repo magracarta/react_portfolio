@@ -1,0 +1,28 @@
+{
+    "mainbanner":[
+        {
+            "category" : "스터디",
+            "title" : "SLIDE ANIMATION",
+            "content" : "해당 작업은 여러 브랜드들을 한번에 보여주며 더욱 인터렉티브하게 소개할수 있는 방법이 있을까 고민하며 만들어본 작업물입니다. 디자인에서 코드구현까지 혼자 스터디 해보았습니다 😊",
+            "char":[
+                "- Swi0per slider 라이브러리 사용",
+                "- 디자인 및 퍼블리싱"
+            ],
+            "skill":[
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "jquery.png", "text":"jQuery"}
+            ],
+            "image": "slide.png"
+            
+        }
+        
+    ],
+    "dropdown":[
+        {
+            "title" : "링크",
+            "text" : "<a target='_blank' href= 'http://alswn144.dothome.co.kr/VTslidetest/'>사이트로 바로가기 ></a>"
+        }
+    ]
+}
