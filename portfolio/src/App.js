@@ -13,15 +13,17 @@ import { createContext, useEffect, useState } from 'react';
 const LenisContext = createContext(null);
 function App() {
   const [lenis, setLenis] = useState(null);
+  const [mousexy , setMousexy] = useState({x:0, y:0});
+ 
   useEffect(() => {
+ 
     const lenisInstance = new Lenis({
       duration: 0.8,  // 빠르고 부드럽게 반응하도록 duration을 설정
       easing: (t) => t * (2 - t),  // 부드럽게 시작하고 끝나는 이징 함수
       smoothWheel: true,  // 휠 스크롤 부드럽게 처리
       smoothTouch: true,  // 터치 스크롤 부드럽게 처리
-      //  wheelMultiplier: 1.5,  // 휠 스크롤을 빠르게 만들기 위한 배율 조정
-      // touchMultiplier: 1.5,  // 터치 스크롤의 반응 속도 조정 (필요시 활성화)
     });
+    
     setLenis(lenisInstance);
     // 애니메이션 최적화 루프
     const animate = (time) => {
@@ -38,17 +40,22 @@ function App() {
     };
   }, []);
 
+ 
+  
 
   return (
-    <>
+    <div onMouseMove={(e)=>{
+      setMousexy({ x: e.pageX, y: e.pageY });
+    }}>
       <Header />
         <Routes>
           <Route path='/' element={<MainPage  lenis= {lenis} setLenis={setLenis}/>} />
           <Route path='/detail/rentmon' element={<Rentmon />} />
           <Route path='/detail/jutopia' element={<Jutopia />} />
         </Routes>
-      <Footer />
-    </>
+       
+      <Footer  mousexy={mousexy}/>
+    </div>
   );
 }
 

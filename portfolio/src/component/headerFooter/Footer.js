@@ -1,8 +1,31 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import MenuAtag from './MenuAtag'
 
-function Footer() {
+function Footer({mousexy}) {
   let gotopbtn = useRef(null);
+  const [currentxy , setCurrentxy] = useState({x:0, y:0});
+
+ 
+
+  useEffect(()=>{
+    let mouseanimation;
+    function mouseFn(){
+      setCurrentxy(prev=>
+        ({
+          x: prev.x+(mousexy.x - prev.x)*0.02,
+          y: prev.y+(mousexy.y - prev.y)*0.02
+        }))
+      mouseanimation = requestAnimationFrame(mouseFn);
+    }
+    mouseFn();
+    return()=>{
+      cancelAnimationFrame(mouseanimation);
+    }
+
+  },[mousexy]);
+
+
+
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
       if (gotopbtn.current) {
@@ -55,9 +78,13 @@ function Footer() {
             <div className='bottom'>성장을 위해 노력하는 개발자입니다 :-)</div>
           </div>
         </div>
-      </div>
-      
+      </div>  
     </div>
+    <div className='mouseMoveTag'
+          style={{
+            transform:`translate( ${currentxy.x}px, ${currentxy.y}px)`
+          }}
+    ></div>
     </>
   )
 }

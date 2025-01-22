@@ -18,16 +18,6 @@ function Section3({lenis , setLenis}) {
     }
     
   },[location]);
-    // 모달 내부 스크롤에 Lenis 적용되지 않도록 스타일로 처리
-    const handleModalOpen = () => {
-      // 모달이 열리면 Lenis의 smoothWheel을 비활성화하여 기본 스크롤을 사용하도록
-      document.body.style.overflow = "hidden";  // 페이지 스크롤 비활성화
-    };
-  
-    const handleModalClose = () => {
-      // 모달이 닫히면 Lenis의 smoothWheel을 다시 활성화
-      document.body.style.overflow = "auto";  // 페이지 스크롤 재활성화
-    };
 
   let scrollFn=()=>{
     if(!section3.current ) return

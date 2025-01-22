@@ -36,7 +36,7 @@ function MainPage({lenis , setLenis}) {
         <Section3 lenis={lenis} setLenis={setLenis} />
         {/* 섹션3 */}
         {/* 섹션4 */}
-        <Work/>
+        <Work lenis={lenis} setLenis={setLenis}/>
         {/* 섹션4 */}
         {/* 섹션5 */}
         <Section5/>

@@ -1,0 +1,49 @@
+{
+    "work":[
+        {
+            "title":"FINGERSUIT",
+            "thumbnail":"fingeruisthumnail.png",
+            "cg" : "커리어"
+        },
+        {
+            "title":"andar",
+            "thumbnail":"andarhumnail.png",
+            "cg" : "커리어"
+        },
+        {
+            "title":"mixsoon",
+            "thumbnail":"mixsoonhumnail.png",
+            "cg" : "커리어"
+        },
+        {
+            "title":"mongze",
+            "thumbnail":"mongzehumnail.png",
+            "cg" : "커리어"
+        },
+        {
+            "title":"Daily&Co",
+            "thumbnail":"dailyncohumnail.png",
+            "cg" : "커리어"
+        },
+        {
+            "title":"DASAN",
+            "thumbnail":"dasanhumnail.png",
+            "cg" : "외주"
+        },
+        {
+            "title":"ANOTHER SUNDAY",
+            "thumbnail":"anothersundayhumnail.png",
+            "cg" : "외주"
+        },
+        {
+            "title":"META GAME",
+            "thumbnail":"MetaGamehumnail.png",
+            "cg" : "스터디"
+        },
+        {
+            "title":"SLIDE ANIMATION",
+            "thumbnail":"slideAnihumnail.png",
+            "cg" : "스터디"
+        }
+    ]
+}
