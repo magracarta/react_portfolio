@@ -28,14 +28,14 @@ function Section5() {
         <div className='innerContainer'>
             <div className='title'>
                 <h2>RECORD</h2>
-                <p>저의 GITHUB와 노션으로 정리된 {window.innerWidth<1100 && <br/>}경력사항들을 소개합니다.</p>
+                {/* <p>GITHUB와 노션으로 정리된 {window.innerWidth<1100 && <br/>}경력사항들을 소개합니다.</p> */}
             </div>
             <div className='wrapbox'>
                 <a className='left' href='https://github.com/magracarta' target='_black' >
                     <div>
                         <div className='top'>
                             <h3>GITHUB</h3>
-                            <p>개발자 김민주의 깃허브로 공부 내역을 확인할 수 있습니다.</p>
+                            <p>지금까지의 깃허브 내역을 확인하실 수 있습니다.</p>
                         </div>
                         <div className='bottom'>
                            <div>자세히 보러가기 <img src='/image/moreviewArrow.svg' alt='moreviewArrow.svg' /></div>

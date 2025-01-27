@@ -4,11 +4,12 @@ import Section2 from './component/Section2'
 import Section3 from './component/Section3'
 import Section5 from './component/Section5'
 import {  useLocation } from 'react-router-dom'
-import AboutMe from './component/AboutMe'
 import Work from './component/Work'
+import Section2Update from './component/Section2Update'
 
 
 function MainPage({lenis , setLenis}) {
+  
   let location = useLocation();
   useEffect(()=>{
     console.log(location.pathname)
@@ -26,11 +27,8 @@ function MainPage({lenis , setLenis}) {
         {/* 섹션1 */}
         <Section1 />
         {/* 섹션1 */}
-        {/* 어바웃 미 */}
-        <AboutMe/>
-        {/* 어바웃 미 */}
         {/* 섹션2 */}
-        <Section2 />
+        <Section2Update />
         {/* 섹션2 */}
         {/* 섹션3 */}
         <Section3 lenis={lenis} setLenis={setLenis} />

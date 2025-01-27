@@ -34,7 +34,7 @@ function ProjectListParts({ item, index, allnum , lenis ,setLenis}) {
             <div>
                 <div className='text'>
                     <h2>{item.title}</h2>
-                    {window.innerWidth >= 1100 ? <pre>{item.content}</pre>:<p>{item.content.replaceAll("\n", "")}</p>}
+                   <pre>{item.content}</pre><p>{item.content.replaceAll("\n", "")}</p>
                     <a href="#none" onClick={()=>{
                         setPmopen(true)
                         // navigate(item.url)

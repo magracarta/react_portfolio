@@ -3,9 +3,10 @@ import SideMenu from './SideMenu'
 import DarkmodeButton from './DarkmodeButton';
 import { useNavigate } from 'react-router-dom';
 
-function Header() {
+function Header({lenis , setLenis}) {
   let [darkmode, setDarkmode] = useState(false);
   let [sidemenu, setSidemenu] = useState(false);
+  let [up , setUp] = useState(false);
   const navigate = useNavigate();
   // 페이지가 로드될 때, localStorage에서 다크모드 상태를 가져옴
   useEffect(() => {
@@ -19,7 +20,28 @@ function Header() {
         body.classList.remove("dark");
       }
     }
+    let beforeScroll = 0;
+    window.addEventListener("scroll",(e)=>{
+      let current = window.scrollY;
+      if(current > beforeScroll){
+        setUp(true);
+      }else{
+        setUp(false);
+      }
+      beforeScroll = window.scrollY;
+    });
   }, []);
+
+  useEffect(()=>{
+          if (sidemenu) {
+              document.body.style.overflow = 'hidden';  // 모달 열 때 페이지 스크롤 비활성화
+              if (lenis) lenis.stop();  // Lenis 애니메이션 비활성화
+            } else {
+              document.body.style.overflow = 'auto';  // 모달 닫을 때 페이지 스크롤 활성화
+              if (lenis) lenis.start();  // Lenis 애니메이션 재시작
+            }
+  },[sidemenu,lenis]);
+
   
   const darkModeClick = () => {
     const body = document.documentElement;
@@ -35,10 +57,10 @@ function Header() {
     });
   };
   return (
-    <div className={sidemenu?'header-wrap sideOn eglish':'header-wrap eglish'}>
+    <div className={sidemenu?'header-wrap sideOn eglish':'header-wrap eglish'} style={{top:up?"-88px":"0"}}>
       {/* 헤더 */}
       <div className='header-top'>
-        <div>
+        <div className='menubox'>
           <div className='menu-btn' onClick={()=>{setSidemenu(!sidemenu)}}> 
             <span className={sidemenu?"habergermenu on":"habergermenu"}>
               <i></i>
@@ -46,8 +68,8 @@ function Header() {
               <i></i>
             </span>  {sidemenu?"CLOSE":"MENU"}</div>
           <div className='home_email'>
-            <div className='home_btn' onClick={()=>{navigate("/")}}><a href='#HOME'>HOME</a></div>
-            <div className='email'>Kim Min Ju<br/><a href='mailto:rmforl1996@gmail.com'>rmforl1996@gmail.com</a></div>
+            {/* <div className='home_btn' onClick={()=>{navigate("/")}}><a href='#HOME'>HOME</a></div> */}
+            {/* <div className='email'>Kim Min Ju<br/><a href='mailto:rmforl1996@gmail.com'>rmforl1996@gmail.com</a></div> */}
           </div>
           <DarkmodeButton darkModeClick={darkModeClick} darkmode={darkmode} sidemenu={sidemenu}/>
         </div>

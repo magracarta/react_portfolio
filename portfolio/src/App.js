@@ -3,15 +3,14 @@ import Header from './component/headerFooter/Header';
 import Footer from './component/headerFooter/Footer';
 import { Router, Routes, Route } from 'react-router-dom';
 import MainPage from './component/index/MainPage';
-import Rentmon from './component/index/component/detail/Rentmon';
-import Jutopia from './component/index/component/detail/Jutopia';
-
 import Lenis from '@studio-freight/lenis';
 import { createContext, useEffect, useState } from 'react';
+import LoadingAnime from './component/index/component/parts/LoadingAnime';
 
 
 const LenisContext = createContext(null);
 function App() {
+  let [lading, setLoading] = useState(false);
   const [lenis, setLenis] = useState(null);
   const [mousexy , setMousexy] = useState({x:0, y:0});
  
@@ -38,20 +37,25 @@ function App() {
     return () => {
       lenisInstance.destroy();
     };
-  }, []);
+  }, [lading]);
 
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(true);
+    },3000);
+  },[]);
  
-  
+  if(!lading) return <div className='LoadingAnima'>
+    <LoadingAnime/>
+  </div>
 
   return (
     <div onMouseMove={(e)=>{
      if(window.innerWidth > 1100) setMousexy({ x: e.pageX, y: e.pageY });
     }}>
-      <Header />
+      <Header lenis= {lenis} setLenis={setLenis} />
         <Routes>
           <Route path='/' element={<MainPage  lenis= {lenis} setLenis={setLenis}/>} />
-          <Route path='/detail/rentmon' element={<Rentmon />} />
-          <Route path='/detail/jutopia' element={<Jutopia />} />
         </Routes>
        
       <Footer  mousexy={mousexy}/>

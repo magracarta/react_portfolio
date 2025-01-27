@@ -51,7 +51,7 @@ function Work({lenis , setLenis}) {
         <div className='innerContainer'>
             <div className='title'>
                 <h2>WORK</h2>
-                <p>저의 커리어와 혼자 공부했던 내용들을 소개합니다.</p>
+                <p>커리어 및 작업물이력 소개</p>
                 <span className='line'></span>
             </div>
             <div className='work-tag'>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import "../css/main2.css"
+// import "../css/main2.css"
 import InfoBox from './parts/InfoBox';
 import ActivitiesProject from './parts/ActivitiesProject';
 import Skils from './parts/Skils';

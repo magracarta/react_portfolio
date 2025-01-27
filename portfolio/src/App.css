@@ -19,6 +19,7 @@ pre { font-size: inherit; font-family: inherit; font-weight: inherit; line-heigh
     --gray: #EFEFEF;
     --gray2: #EFEFEF;
     --gray3: #F9F9F9;
+    --gray4: #9B9B9B;
 }
 
 
@@ -31,6 +32,7 @@ pre { font-size: inherit; font-family: inherit; font-weight: inherit; line-heigh
     --gray: #202020;
     --gray2: #5c5c5c;
     --gray3: #747474;
+    --gray4: #a8a8a8;
 }
 
 .mo {  display: none; }
@@ -61,16 +63,18 @@ body { background: var(--background); color: var(--textcolor); }
 
 
 /* 헤더 */
-.header-wrap {  position: fixed;  top: 0;  font-weight: bold; width: 100%; z-index: 10; }
-.header-wrap .header-top {  padding: 24px var(--leftright);  z-index: 3;  position: relative;  color: var(--titlecolor);}
-.header-wrap .header-top > div { display: flex; justify-content: space-between; mix-blend-mode: difference; }
+.header-wrap {  position: fixed;  top: 0;  font-weight: bold; width: 100%; z-index: 10; background: var(--background); border-bottom:1px solid var(--gray2); transition: all .6s; }
+.header-wrap .header-top {   z-index: 3;  position: relative;  color: var(--titlecolor);    }
+
+.header-wrap .header-top > div.menubox {  padding: 18px var(--leftright); display: flex; justify-content: space-between; mix-blend-mode: difference; }
 .header-wrap .header-top .menu-btn { cursor: pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
 .header-wrap .header-top .home_email {  display: flex; position: absolute; top: 24px; left: 58%; }
 .header-wrap .header-top .home_email .home_btn {   cursor: pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;  }
 .header-wrap .header-top .home_email .email {  font-size: 16px; font-weight: 400; color: var(--textcolor); margin-left: 40px; }
 
+.header-wrap .header-top > div.menubox  {  }
 
-
+.header-wrap.sideOn { top: 0 !important; }
 .header-wrap.sideOn .header-top {  color: var(--background); border-bottom: 1px solid var(--border-color); background: var(--titlecolor);  }
 .header-wrap.sideOn .header-top .home_email .email { color: var(--background); }
 
@@ -80,7 +84,7 @@ body { background: var(--background); color: var(--textcolor); }
 
 
 @media screen and (max-width : 1100px) {
-    .header-wrap .darkmode { display: none; }
+    /* .header-wrap .darkmode { display: none; } */
     .header-wrap .header-top .home_email .email { display: none; }
     .header-wrap .header-top .home_email { position: unset; }
 
@@ -88,7 +92,7 @@ body { background: var(--background); color: var(--textcolor); }
 
 
 /* 사이드 메뉴 */
-.sidemenu { display: block; position: fixed; top: 88px; left: -100%; width: 100%; height: calc(100% - 88px); background: var(--titlecolor); z-index: 3; transition: all .3s; 
+.sidemenu { display: block; position: fixed; top: 76px; left: -100%; width: 100%; height: calc(100% - 76px); background: var(--titlecolor); z-index: 3; transition: all .3s; 
     display: flex; align-items: center; color: var(--background); 
 
 }
@@ -141,7 +145,7 @@ body { background: var(--background); color: var(--textcolor); }
 
 @media screen and (max-width : 1100px) {
 
-    .sidemenu { top: 73px; height: calc(100% - 73px);}
+    .sidemenu { top: 61px; height: calc(100% - 61px);}
     .sidemenu .rightImgwrap { display: none; }
     .sidemenu .sidemenuwrap { height: auto; }
     .sidemenu .sidemenuwrap .menuWrap { position: relative; height: auto; display: block; } 
@@ -152,7 +156,7 @@ body { background: var(--background); color: var(--textcolor); }
     .sidemenu .sidemenuwrap .menuWrap ul li:hover a { opacity: 0.5; font-weight: 400; }
 
     .sidemenu .lastmyinfo { display: block; padding: 0 var(--leftright); color: var(--textcolorw); opacity: 0.5; font-size: 13px; font-weight: 400; padding-top: 100px; }
-    .sidemenu .darkmode { display: block; position: absolute; right: 15px; top: 25px; z-index: 3;  }
+    /* .sidemenu .darkmode { display: block; position: absolute; right: 15px; top: 25px; z-index: 3;  } */
 }
 
 
@@ -246,7 +250,7 @@ body { background: var(--background); color: var(--textcolor); }
 .gotop img { mix-blend-mode: difference; }
 
 
-.header-wrap .header-top .menu-btn { display: flex; }
+.header-wrap .header-top .menu-btn { display: flex; align-items: center;  }
 .habergermenu { width: 19px; height: 19px; display: inline-block; position: relative; margin-right: 15px; }
 .habergermenu i { display: block; width: 100%; height: 1px; background: var(--titlecolor); position: absolute; transition: all .4s; }
 
@@ -276,7 +280,11 @@ body { background: var(--background); color: var(--textcolor); }
     }
 
     .mouseMoveTag { position: absolute; left: 10px; top: 10px; width: 30px; height: 30px;  border-radius: 50px; 
-        z-index: 1000000000000; mix-blend-mode: difference;
+        z-index: 1000000000000; mix-blend-mode: difference; animation: opacitya 1.5s forwards linear;
+    }
+    @keyframes opacitya {
+        0% {opacity: 0; } 8% {opacity: 0; }
+        100% {opacity: 1; }
     }
     
     .light .mouseMoveTag { background-color: var(--gray); }
