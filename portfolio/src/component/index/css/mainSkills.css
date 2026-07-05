@@ -1,0 +1,125 @@
+/* Skills Section — 기본: px 고정 (1100px ~ 1920px) */
+.sectionSkills { padding: 120px 0; }
+
+.skillsInner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+    align-items: flex-start;
+    flex-direction: column;
+}
+.skillsLabel {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray5);
+    letter-spacing: 0.08em;
+}
+
+.skillLegend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+.skillLegend li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--gray4);
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot.main { background: var(--titlecolor); }
+.dot.sub  { background: var(--gray4); }
+.dot.exp  { background: transparent; border: 1.5px solid var(--gray4); }
+
+/* 카드 */
+.skillsCard {
+    background: var(--textcolorw);
+    border-radius: 16px;
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.skillGroup { display: flex; flex-direction: column; gap: 14px; }
+
+.groupLabel {
+    font-size: 13px;
+    color: var(--gray4);
+    font-weight: 500;
+}
+
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skillTag {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.skillTag.main {
+    background: var(--titlecolor);
+    color: var(--background);
+}
+.skillTag.sub {
+    background: var(--tag-sub);
+    color: var(--titlecolor);
+}
+.skillTag.exp {
+    background: transparent;
+    color: var(--titlecolor);
+    border: 1.5px solid var(--gray4);
+}
+
+/* 1920px 이상: vw 비율 */
+@media screen and (min-width: 1920px) {
+    .sectionSkills { padding: 4.167vw 0 6.25vw; }
+    .skillsInner { max-width: 62.5vw; }
+    .skillsHeader { gap: 1.042vw; margin-bottom: 1.042vw; }
+    .skillsLabel { font-size: 0.833vw; }
+    .skillLegend { gap: 0.833vw; }
+    .skillLegend li { font-size: 0.677vw; gap: 0.26vw; }
+    .dot { width: 0.417vw; height: 0.417vw; }
+    .skillsCard { border-radius: 0.833vw; padding: 2.083vw 2.5vw; gap: 1.875vw; }
+    .skillGroup { gap: 0.729vw; }
+    .groupLabel { font-size: 0.677vw; }
+    .skillTags { gap: 0.417vw; }
+    .skillTag { font-size: 0.729vw; padding: 0.417vw 0.938vw; }
+}
+
+/* 모바일 */
+@media screen and (max-width: 1100px) {
+    .sectionSkills { padding: 10vw 0 15vw; }
+    .skillsInner { max-width: 100%; padding: 0 15px; }
+    .skillsHeader { gap: 4vw; margin-bottom: 4vw; }
+    .skillsLabel { font-size: 3.5vw; }
+    .skillLegend li { font-size: 3vw; gap: 1.5vw; }
+    .dot { width: 2vw; height: 2vw; }
+    .skillsCard { border-radius: 3vw; padding: 5vw 4vw; gap: 6vw; }
+    .skillGroup { gap: 3vw; }
+    .groupLabel { font-size: 3vw; }
+    .skillTags { gap: 2vw; }
+    .skillTag { font-size: 2.5vw; padding: 2vw 4vw; }
+}

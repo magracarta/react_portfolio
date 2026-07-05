@@ -21,7 +21,7 @@ function RentmonModal() {
         </div>
         <Skils/>
         <Role />
-        <Url/>
+        {/* <Url/> */}
       </div>
     </div>
   )

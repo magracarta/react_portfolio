@@ -2,16 +2,17 @@
 .section4 .innerContainer { text-align: center; }
 .section4 .innerContainer .title {  }
 .section4 .innerContainer .title h2 { font-size: 3.333vw; color: var(--titlecolor); font-weight: 600; margin: 0 0 1.25vw; }
-.section4 .innerContainer .title p { font-size: 1.04vw; margin: 0; }
+.section4 .innerContainer .title p { font-size: 0.785vw; margin: 0; position: relative; opacity: 0; top: 50px; transition: all 1s;}
 .section4 .innerContainer .title .line { width: 1px; height: 2.96875vw; background-color: var(--titlecolor); display: inline-block; margin: 2.6041vw 0; }
 
 
 .section4 .innerContainer .title h2 ,
 .section4 .innerContainer .title p { transform: translate(0 , 50px);  opacity: 0;  }
 .section4 .innerContainer .title .line { transform: scaleY(0); transition: all 1s; }
-.section4.on .innerContainer .title h2 { transform: translate(0 , 0px); transition: all 0.8s; opacity: 1; }
-.section4.on .innerContainer .title p {  transform: translate(0 , 0px); transition: all 1s; opacity: 1;}
+.section4.on .innerContainer .title p {  transform: translate(0 , 0px);  opacity: 1; top:0; margin-top: 10px;  }
 .section4.on .innerContainer .title .line {  transform: scaleY(1); }
+.section4 .innerContainer .titleSapn { transform: translate(0 , 0px); transition: all 0.8s; opacity: 0; position: relative; top: 50px; font-size: 20px; font-weight: 500; }
+.section4.on .innerContainer .titleSapn { opacity: 1; top:0; }
 
 
 
@@ -84,8 +85,14 @@
 .work .detailcontainer .mainbanner .left .title h2 { letter-spacing: -3px; width: 48%;}
 .dropDownWrap .titlebutton span { font-size: 16px; }
 .dropDownWrap .textContent * { font-size: 14px; }
+
+
+
+.detailcontainer .mainbanner.noimg .left .skills { width: 100%;}
+
 @media screen and (max-width : 1100px) {
     .work .function ul { width: 100%;}
+
     .work .detailcontainer .mainbanner .left .title small { width: 100%; text-align: center; display: block; }
     .work .detailcontainer .mainbanner .left .title h2 { width: 100%;  font-weight: 500; letter-spacing: -2px; font-size: 16.7vw;
         margin-bottom: 20px; }    
@@ -98,12 +105,18 @@
     .dropDownWrap .textContent { padding-left:  15px; padding-right:  15px; }
     .dropDownWrap .titlebutton span { font-size: 15px; }
     .dropDownWrap .textContent * { font-size: 13px; }
+
+    .section4 .innerContainer .title {  }
+    .section4 { padding-top: 80px; }
+    .section4.on .innerContainer .titleSapn { font-size: 15px; } 
+    .section4.on .innerContainer .title p { font-size: 12px; }
 }
 
 
 @media screen and (min-width : 1100px) {
     .ReactModal__Content {  }
     .work .detailcontainer .mainbanner { min-height: 650px; }
+    .work .detailcontainer .mainbanner.noimg { min-height: 400px; }
         
     .work .detailcontainer .mainbanner .left .title h2 { letter-spacing: -1px; }
 }

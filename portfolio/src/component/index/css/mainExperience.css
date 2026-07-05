@@ -1,0 +1,234 @@
+/* Experience Section — 기본: px 고정 (1100px ~ 1920px) */
+.sectionExp { padding: 120px 0; }
+
+.expInner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expLabel {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray5);
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+}
+
+/* 2컬럼 그리드 */
+.expGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+/* 카드 공통 */
+.expCard {
+    border: 1px solid var(--gray2);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.expCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.expCompany {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--titlecolor);
+    margin: 0 0 4px;
+}
+
+.expRole {
+    font-size: 13px;
+    color: var(--gray4);
+    margin: 0;
+}
+
+.expPeriod {
+    font-size: 12px;
+    color: var(--gray4);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.expDesc {
+    font-size: 14px;
+    color: var(--gray5);
+    line-height: 1.8em;
+    margin: 0 0 16px;
+}
+
+.expPoints {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.expPoints li {
+    font-size: 14px;
+    color: var(--gray5);
+    padding-left: 12px;
+    position: relative;
+    line-height: 1.6em;
+}
+.expPoints li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--gray4);
+}
+
+/* 서브 프로젝트 카드 */
+.expProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.expSubCard {
+    border: 1px solid var(--gray2);
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+.expSubTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+.expSubTop strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--titlecolor);
+}
+.expSubCard p {
+    font-size: 12px;
+    color: var(--gray4);
+    margin: 0;
+    line-height: 1.7em;
+}
+
+/* 태그 */
+.expTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.expTag {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--gray4);
+    color: var(--titlecolor);
+    background: transparent;
+}
+
+/* 오른쪽 컬럼 */
+.expRightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 사이드 프로젝트 카드 */
+.expSideCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--gray2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+    cursor: pointer;
+    text-align: left;
+    background: transparent;
+}
+.expSideCard:hover { border-color: var(--titlecolor); }
+
+.expSideLabel {
+    display: block;
+    font-size: 12px;
+    color: var(--gray4);
+    margin-bottom: 4px;
+}
+.expSideName {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--titlecolor);
+}
+.expArrow {
+    font-size: 18px;
+    color: var(--gray4);
+    transition: transform 0.2s, color 0.2s;
+}
+.expSideCard:hover .expArrow {
+    transform: translateX(4px);
+    color: var(--titlecolor);
+}
+
+/* 1920px 이상: vw 비율 */
+@media screen and (min-width: 1920px) {
+    .sectionExp { padding: 4.167vw 0 6.25vw; }
+    .expInner { max-width: 62.5vw; }
+    .expLabel { font-size: 0.833vw; margin-bottom: 1.042vw; }
+    .expGrid { gap: 0.833vw; }
+    .expCard { border-radius: 0.625vw; padding: 1.25vw; }
+    .expCardTop { margin-bottom: 0.833vw; gap: 0.625vw; }
+    .expCompany { font-size: 0.938vw; margin: 0 0 0.208vw; }
+    .expRole { font-size: 0.677vw; }
+    .expPeriod { font-size: 0.625vw; }
+    .expDesc { font-size: 0.677vw; margin: 0 0 0.833vw; }
+    .expPoints { margin: 0 0 1.042vw; gap: 0.313vw; }
+    .expPoints li { font-size: 0.677vw; padding-left: 0.625vw; }
+    .expProjects { gap: 0.521vw; margin-bottom: 1.042vw; }
+    .expSubCard { border-radius: 0.417vw; padding: 0.729vw 0.833vw; }
+    .expSubTop { margin-bottom: 0.313vw; gap: 0.625vw; }
+    .expSubTop strong { font-size: 0.677vw; }
+    .expSubCard p { font-size: 0.625vw; }
+    .expTags { gap: 0.313vw; }
+    .expTag { font-size: 0.625vw; padding: 0.26vw 0.625vw; }
+    .expRightCol { gap: 0.833vw; }
+    .expSideCard { border-radius: 0.625vw; padding: 1.042vw 1.25vw; }
+    .expSideLabel { font-size: 0.625vw; margin-bottom: 0.208vw; }
+    .expSideName { font-size: 0.938vw; }
+    .expArrow { font-size: 0.938vw; }
+}
+
+/* 모바일 */
+@media screen and (max-width: 1100px) {
+    .sectionExp { padding: 10vw 0 15vw; }
+    .expInner { max-width: 100%; padding: 0 15px; }
+    .expLabel { font-size: 3.5vw; margin-bottom: 4vw; }
+    .expGrid { grid-template-columns: 1fr; gap: 4vw; }
+    .expCard { border-radius: 2vw; padding: 5vw; }
+    .expCardTop { margin-bottom: 3vw; }
+    .expCompany { font-size: 5vw; }
+    .expRole { font-size: 3vw; }
+    .expPeriod { font-size: 2.8vw; }
+    .expDesc { font-size: 3.2vw; margin: 0 0 4vw; }
+    .expPoints { margin: 0 0 4vw; gap: 2vw; }
+    .expPoints li { font-size: 3.2vw; padding-left: 3vw; }
+    .expProjects { gap: 2.5vw; margin-bottom: 4vw; }
+    .expSubCard { border-radius: 1.5vw; padding: 3vw 4vw; }
+    .expSubTop strong { font-size: 3.2vw; }
+    .expSubCard p { font-size: 2.8vw; }
+    .expTags { gap: 2vw; }
+    .expTag { font-size: 3vw; padding: 1.5vw 3vw; }
+    .expRightCol { gap: 4vw; }
+    .expSideCard { border-radius: 2vw; padding: 4vw 5vw; }
+    .expSideLabel { font-size: 2.8vw; }
+    .expSideName { font-size: 4.5vw; }
+    .expArrow { font-size: 4.5vw; }
+}

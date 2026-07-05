@@ -26,9 +26,6 @@ function WorkDetail({file}) {
         {/* 경력사항 설명 */}
         <div className='dropdownContainer'>
           {dropdown && dropdown.map((dp, idx)=><DropdownText key={idx+dp.title} title={dp.title} text={dp.text}/> )}
-         
-         
-
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import Skillcionparts from '../detail/component/Skillcionparts'
 function WorkMainBanner({workData}) {
   let {category, image, title, content, char, skill } = workData[0];
   useEffect(()=>{
-   
+    if(!image) document.querySelector(".mainbanner").classList.add("noimg");
   },[workData]);
   return (
     <div className='mainbanner'>
@@ -15,7 +15,8 @@ function WorkMainBanner({workData}) {
             <small>{category}</small>
             <h2>{title}</h2>
             <div className='mobanner mo'>
-                <img src={`/image/workimage/${image}`} alt={`${image}`}/>
+              {image&&<img src={`/image/workimage/${image}`} alt={`${image}`}/>}
+                
             </div>
             <div className='content'>
               <p dangerouslySetInnerHTML={{__html: content}}/>
@@ -41,7 +42,7 @@ function WorkMainBanner({workData}) {
         </div>
         <div className='right pc'>
             <div>
-            <img src={`/image/workimage/${image}`} alt={`${image}`}/>
+           {image&& <img src={`/image/workimage/${image}`} alt={`${image}`}/>}
             </div>
         </div>
       </div>

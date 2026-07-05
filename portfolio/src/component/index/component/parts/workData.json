@@ -1,6 +1,11 @@
 {
     "work":[
         {
+            "title":"knjerp",
+            "thumbnail":"knj.png",
+            "cg" : "커리어"
+        },
+        {
             "title":"fingersuit",
             "thumbnail":"fingeruisthumnail.png",
             "cg" : "커리어"
@@ -38,6 +43,16 @@
             "title":"webzine",
             "thumbnail":"webzinhumnail.png",
             "cg" : "외주"
+        },
+        {
+            "title":"rentmon",
+            "thumbnail":"rentmon.png",
+            "cg" : "스터디"
+        },
+        {
+            "title":"zootopia",
+            "thumbnail":"zootopia.png",
+            "cg" : "스터디"
         },
         {
             "title":"metagame",

@@ -23,7 +23,7 @@ function Rentmon() {
         </div>
         <Skils/>
         <Role />
-        <Url/>
+        {/* <Url/> */}
       </div>
     </div>
   )

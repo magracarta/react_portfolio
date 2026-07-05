@@ -4,9 +4,12 @@ import workDats from "./parts/workData.json";
 import "../css/work.css"
 import WorkDetail from './WorkDetail';
 import ReactModal from 'react-modal';
+import RentmonModal from './detail/RentmonModal';
+import JutopiaModal from './detail/JutopiaModal';
 
 function Work({lenis , setLenis}) {
     let [wopen , setwopen] = useState(false);
+    let [title , setTitle] = useState("");
     let [tag, setTag] = useState("0");
     let [cg, setcg] = useState("0");
     let [jsonfile, setJsonFile] = useState("");
@@ -47,11 +50,11 @@ function Work({lenis , setLenis}) {
         // else section4.current.classList.remove("on");
     }
   return (
-    <div className='section4' id="WORK" ref={section4}>
+    <div className='section4' id="procject" ref={section4}>
         <div className='innerContainer'>
             <div className='title'>
-                <h2>WORK</h2>
-                <p>커리어 및 작업물이력 소개</p>
+                <span className='titleSapn'>05. MAIN PROCJECTS</span>
+                <p>저의 커리어와 혼자 공부했던 내용들을 소개합니다.</p>
                 <span className='line'></span>
             </div>
             <div className='work-tag'>
@@ -67,6 +70,7 @@ function Work({lenis , setLenis}) {
                     return <li style={{transition: `all  ${0.8}s ${0.3*idx}s`}} key={el.title} className={cg==="0" ||el.cg === cg? "show":"hidden"}
                         onClick={()=>{
                             setwopen(true);
+                            setTitle(el.title);
                             setJsonFile(el.title);
                         }}
                     >
@@ -83,8 +87,12 @@ function Work({lenis , setLenis}) {
             ariaHideApp={false}
         >
             <div className='closeBtn' onClick={()=>{setwopen(false)}}><i></i></div>
-            <WorkDetail file={`${jsonfile}.json`} />
+             {
+               (["rentmon","zootopia"].includes(title)?( "rentmon" == title?<RentmonModal/>:<JutopiaModal/>) : <WorkDetail file={`${jsonfile}.json`} />) 
+            }
         </ReactModal>
+
+
     </div>
   )
 }

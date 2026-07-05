@@ -4,16 +4,19 @@ import MenuAtag from './MenuAtag'
 function Footer({mousexy}) {
   let gotopbtn = useRef(null);
   const [currentxy , setCurrentxy] = useState({x:0, y:0});
+  const mousexyRef = useRef(mousexy);
 
- 
+  useEffect(()=>{
+    mousexyRef.current = mousexy;
+  },[mousexy]);
 
   useEffect(()=>{
     let mouseanimation;
     function mouseFn(){
       setCurrentxy(prev=>
         ({
-          x: prev.x+(mousexy.x - prev.x)*0.02,
-          y: prev.y+(mousexy.y - prev.y)*0.02
+          x: prev.x+(mousexyRef.current.x - prev.x)*0.02,
+          y: prev.y+(mousexyRef.current.y - prev.y)*0.02
         }))
       mouseanimation = requestAnimationFrame(mouseFn);
     }
@@ -21,8 +24,7 @@ function Footer({mousexy}) {
     return()=>{
       cancelAnimationFrame(mouseanimation);
     }
-
-  },[mousexy]);
+  },[]);
 
 
 
@@ -63,19 +65,19 @@ function Footer({mousexy}) {
             <div className='bottom'>
                 ⓒKim min ju. All right reserved 
             </div>
-            <div className='bottomtext'>성장을 위해 노력하는 개발자입니다 :-)</div>
+            <div className='bottomtext'></div>
           </div>
           {/* right */}
           <div className='right'>
             <div className='topmenu'>
               <ul>
-                <MenuAtag text={"HOME"} clickFn={()=>{}} idx = {"1"}/>
-                <MenuAtag text={"PROJECT"} clickFn={()=>{}} idx = {"2"} />
-                <MenuAtag text={"ETC"} clickFn={()=>{}} idx = {"3"} />
-                <MenuAtag text={"RECORD"} clickFn={()=>{}} idx = {"4"} />
+                <MenuAtag text={"Intro"}      id={"intro"}      clickFn={()=>{}} idx={"1"} />
+                <MenuAtag text={"About me"}   id={"about"}      clickFn={()=>{}} idx={"2"} />
+                <MenuAtag text={"Skills"}     id={"skills"}     clickFn={()=>{}} idx={"3"} />
+                <MenuAtag text={"Experience"} id={"experience"} clickFn={()=>{}} idx={"4"} />
               </ul>
             </div>
-            <div className='bottom'>성장을 위해 노력하는 개발자입니다 :-)</div>
+            <div className='bottom'></div>
           </div>
         </div>
       </div>  

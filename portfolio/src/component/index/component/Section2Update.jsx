@@ -17,13 +17,17 @@ export default function Section2Update() {
     }
     
     useEffect(()=>{
-        if( section2.current && document.querySelector(".section2")) {
-            window.addEventListener("scroll",scrollFn);
-        }else window.removeEventListener("scroll",scrollFn);
+        // if( section2.current && document.querySelector(".section2")) {
+        //     window.addEventListener("scroll",scrollFn);
+        // }else window.removeEventListener("scroll",scrollFn);
         
-        return()=>{
-            window.removeEventListener("scroll",scrollFn);
-        }
+        // return()=>{
+        //     window.removeEventListener("scroll",scrollFn);
+        // }
+
+        setTimeout(()=>{
+            document.querySelector(".section2").classList.add("on")}
+        ,500);
     },[]);
 
 

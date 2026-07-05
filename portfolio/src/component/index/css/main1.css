@@ -1,66 +1,37 @@
 .section01 {  }
 
 /* section01 */
-.mo { display: none; }
-.section01 {  height: 100vh; display: flex; align-items: center; }
-.section01 h1 { margin: 0;  color: var(--gray4);   line-height: 1.3em;}
-.section01 h1 span { margin: 0; font-weight: bold; color: var(--titlecolor); }
-.section01 small { font-size: 1.5vw; display: block; margin-bottom: 1.5vw; font-weight: 500; }
-.section01 .textAniContainer { position: relative; }
-.section01 .textAniContainer .text {  }
-.section01 .textAniContainer .substance { position: absolute; top: 0; left: 0; }
+.section01 { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.section01 h1 { margin: 0; color: var(--titlecolor); font-size: 1.823vw; line-height: 1.4em; }
+.section01 h1 span { font-weight: bold; color: var(--titlecolor); }
 
-.section01 .textAniContainer h1 { font-size: 4.3vw; opacity: 0.1; }
-.section01 .textAniContainer .substance h1  { opacity: 1; }
-.section01 .textAniContainer .substance h1 {
-   width: 0; white-space: nowrap; overflow: hidden;
-   animation: textAnima  linear forwards;
-} 
+.section01 small {
+    font-size: 0.833vw; display: block; margin-bottom: 1.3vw; font-weight: 500;
+    color: var(--gray5); letter-spacing: 0.3em;
+    opacity: 0;
+    animation: sec01SmallIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+}
+.section01 .lineWrap { overflow: hidden; }
+.section01 .lineWrap h1 {
+    transform: translateY(110%);
+    animation: sec01LineIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.section01 .lineWrap:nth-child(1) h1 { animation-delay: 0.55s; }
+.section01 .lineWrap:nth-child(2) h1 { animation-delay: 0.8s; }
 
-.section01 small { animation: textAnima1 linear 1s forwards; }
-.section01 .textAniContainer .substance h1:nth-child(1) { animation-duration: 0.5s; animation-delay: 0.5s;  }
-.section01 .textAniContainer .substance h1:nth-child(2) { animation-delay: 1s;  animation-duration: 1s; }
-.section01 .textAniContainer .substance h1:nth-child(3) { animation-delay: 2s; animation-duration: 1.5s;}
-.section01 .textAniContainer .substance h1:nth-child(4) { animation-delay: 2s; animation-duration: 1.5s;}
-.section01 .textAniContainer .substance h1:nth-child(5) { animation-delay: 2s; animation-duration: 3s; }
-
-
-@keyframes textAnima1{
-    0% {
-        opacity: 0;
-        transform: translate(0 , 30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0 , 0px);
-    }
+@keyframes sec01SmallIn {
+    0%   { opacity: 0; transform: translateY(6px); letter-spacing: 0.3em; }
+    100% { opacity: 1; transform: translateY(0);   letter-spacing: 0.1em; }
+}
+@keyframes sec01LineIn {
+    0%   { transform: translateY(110%); }
+    100% { transform: translateY(0); }
 }
 
-
-@keyframes textAnima{
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-
-
-@media screen and (max-width : 1100px) { 
-    .pc { display: none; }
-    .mo { display: block; }
-    .section01 .textAniContainer h1 { font-size: 9.3vw; }
-    .section01 small { font-size: 4vw; margin-bottom: 6.66vw; }
-    
-    .section01 .textAniContainer .substance h1:nth-child(1) { animation-duration: 0.5s; animation-delay: 0.5s;  }
-    .section01 .textAniContainer .substance h1:nth-child(2) { animation-delay: 1s;  animation-duration: 0.5s; }
-    .section01 .textAniContainer .substance h1:nth-child(3) { animation-delay: 1.5s; animation-duration: 0.5s;}
-    .section01 .textAniContainer .substance h1:nth-child(4) { animation-delay: 2s; animation-duration: 0.5s;}
-    .section01 .textAniContainer .substance h1:nth-child(5) { animation-delay: 2.5s; animation-duration: 0.5s; }
-
-
+@media screen and (max-width : 1100px) {
+    .section01 small { font-size: 3.5vw; margin-bottom: 4vw; }
+    .section01 .sec01TextWrap { text-align: center; }
+    .section01 .lineWrap h1 { font-size: 6.5vw; }
 }
 
  

@@ -6,6 +6,9 @@ import Section5 from './component/Section5'
 import {  useLocation } from 'react-router-dom'
 import Work from './component/Work'
 import Section2Update from './component/Section2Update'
+import Section2About from './component/Section2About'
+import Section3Skills from './component/Section3Skills'
+import Section4Experience from './component/Section4Experience'
 
 
 function MainPage({lenis , setLenis}) {
@@ -17,7 +20,8 @@ function MainPage({lenis , setLenis}) {
     setTimeout(()=>{
       if(window.innerWidth < 1100){
         let pathname = window.location.href.split("#")[1];
-        if(pathname && pathname!="none")window.scrollTo({top: document.querySelector(`#${pathname}`).offsetTop-50});
+        const target = pathname && pathname !== "none" ? document.querySelector(`#${pathname}`) : null;
+        if (target) window.scrollTo({ top: target.offsetTop - 50 });
       }
     },500)
 
@@ -28,17 +32,14 @@ function MainPage({lenis , setLenis}) {
         <Section1 />
         {/* 섹션1 */}
         {/* 섹션2 */}
-        <Section2Update />
+        <Section2About />
         {/* 섹션2 */}
         {/* 섹션3 */}
-        <Section3 lenis={lenis} setLenis={setLenis} />
+        <Section3Skills/>
         {/* 섹션3 */}
         {/* 섹션4 */}
-        <Work lenis={lenis} setLenis={setLenis}/>
+        <Section4Experience lenis={lenis} setLenis={setLenis}/>
         {/* 섹션4 */}
-        {/* 섹션5 */}
-        <Section5/>
-        {/* 섹션5 */}
     </div>
   )
 }

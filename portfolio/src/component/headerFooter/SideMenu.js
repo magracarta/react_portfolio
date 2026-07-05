@@ -83,7 +83,7 @@ function SideMenu({darkModeClick , darkmode, sidemenu , setSidemenu}) {
     }
  
   return (
-    <div className='sidemenu' onMouseMove={(e)=>{mouseEvent(e);}} >
+    <div className='sidemenu' >
         <div className='innerContainer'>
             <DarkmodeButton darkModeClick={darkModeClick} darkmode={darkmode} sidemenu={sidemenu}/>
             {/* 메뉴 */}
@@ -92,16 +92,15 @@ function SideMenu({darkModeClick , darkmode, sidemenu , setSidemenu}) {
                     <ul onMouseOut={()=>{setMouseOver(false);
                         if(pathname !== "/") setPick(null);
                     }}>
-                        <MenuAtag text={"HOME"} clickFn={clickMenu} idx = {"1"}/>
-                        <MenuAtag text={"PROJECT"} clickFn={clickMenu} idx = {"2"} />
-                        <MenuAtag text={"WORK"} clickFn={clickMenu} idx = {"3"} />
-                        <MenuAtag text={"RECORD"} clickFn={clickMenu} idx = {"4"} />
-                        <div className='mouseMove' style={{transform:`translate(${xycode.x}px , ${xycode.y}px)`}} ><img src='/image/blackarrow.svg' alt='blackarrow.svg'/><span>{text}</span></div>
+                        <MenuAtag text={"Intro"} id={"intro"} clickFn={clickMenu} idx = {"1"}/>
+                        <MenuAtag text={"About me"} id={"about"} clickFn={clickMenu} idx = {"2"} />
+                        <MenuAtag text={"Skills"} id={"skills"} clickFn={clickMenu} idx = {"3"} />
+                        <MenuAtag text={"Experience"} id={"experience"} clickFn={clickMenu} idx = {"4"} />                  
+                        
                     </ul>
                 </div>
                 <div className='rightImgwrap'>
-                    {pick !==null && <img src={mouseOver?`/image/menu${img}.png`:`/image/menu${pick+1}.png`} alt='menu1' ref={mouseRef} />}
-                    
+                  
                 </div>
             </div>
             {/* 내정보 */}

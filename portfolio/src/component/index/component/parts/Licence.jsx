@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Licence() {
   return (
-    <div className='historyWrap'>
+    <div className='historyWrap' id='license'>
       <span className='title'>04. LICENSE</span>
       <ul>
         <li><span>2024.12.11</span><p>정보처리 기사</p></li>

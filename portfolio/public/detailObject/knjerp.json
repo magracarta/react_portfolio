@@ -1,0 +1,29 @@
+{
+    "mainbanner":[
+        {
+            "category" : "커리어",
+            "title" : "KNJ",
+            "content" : "모바일팩토리에서 KNJ ERP 시스템 구축 프로젝트 참여했습니다.",
+
+            "skill":[
+                {"img": "backend (2).png", "text":"JAVA"},
+                {"img": "backend (1).png", "text":"SERVLETS"},
+                {"img": "oracle.png", "text":"ORACLE"},
+                {"img": "backend (3).png", "text":"Tomcat"},
+                {"img": "redis.png", "text":"Redis"},
+                {"img": "front (10).png", "text":"JSP"},
+                {"img": "front (8).png", "text":"HTML5"},
+                {"img": "front (2).png", "text":"CSS3"},
+                {"img": "front (3).png", "text":"JAVASCRIPT"},
+                {"img": "tool (1).png", "text":"IntelliJ"},
+                {"img": "tool (4).png", "text":"GITHUB"}
+            ]
+        }
+    ],
+    "dropdown":[
+        {
+            "title" : "경력기술서",
+            "text" : "<div><p><strong>모바일팩토리 | 사원</strong></p><ul><li>KNJ ERP 구축 프로젝트 참여 | Web 및 Backend 개발자</li><li>2025년 3월 ~ 현재 (약 1년)</li><li>반도체 부품 제조 공정의 디지털 전환을 위한 통합 ERP 시스템 구축</li><li>핵심 역할: 백엔드 및 프론트엔드 풀스택 개발, 시스템 마이그레이션 참여</li><li>기술 스택: Java 17, Spring Boot 3.2.6, Oracle, Redis, Gradle, JSP, JQuery</li></ul><br/><p><strong>주요 성과:</strong></p><ul><li>기존 구글 워크스페이스 기반의 수기 업무 체계를 통합 ERP 시스템으로 성공적 전환 (2026년 1월 오픈)</li><li>스프링 부트 1.4 버전의 레거시 프로젝트를 최신 아키텍처인 3.2 버전으로 마이그레이션 수행</li><li>제조, 영업, 물류, 회계 전 모듈 개발 및 현장 최적화(천안 사업장 상주 및 QA) 완수</li></ul><br/><p><strong>주요 프로젝트 상세</strong></p><ul><li><strong>1. ERP 프레임워크 현대화 및 마이그레이션 (2025.03 ~ 2025.04)</strong><ul><li>설명: Java 11 지원 종료 대응 및 시스템 보안 강화를 위한 프레임워크 업그레이드</li><li>수행 내용: Spring Boot 1.4.3에서 3.2.6으로 마이그레이션 (jakarta 패키지 전환 및 의존성 해결), Java 11에서 17로 업그레이드 및 최신 문법 적용, Redis 연동 환경의 라이브러리 호환성 검토 및 어플리케이션 로직 적용, 컨플루언스를 활용한 개발 표준안 초안 작성</li><li>성과: 최신 라이브러리 생태계 활용이 가능한 안정적인 개발 환경 구축</li></ul></li><br/><li><strong>2. 제조 공정 및 생산 현황 관리 모듈 개발 (2025.06 ~ 2026.01)</strong><ul><li>설명: 반도체 부품의 투입부터 출하까지 전 공정 트래킹 시스템 구축</li><li>수행 내용: Oracle Pivot, Unpivot 연산 및 Merge 문을 활용한 실시간 공정 통계 대시보드 구현, SortableJS 기반의 드래그 앤 드롭 결재선 설정 및 AUIGrid를 이용한 대용량 품목 관리 UI 개발, 영업 납품 계획과 연동된 공정별(고순화, CVD, 황삭, 정삭) 작업 지시서 생성 로직 개발</li><li>성과: 수기 관리 대비 데이터 정확도 향상 및 실시간 생산 현황 파악 가능</li></ul></li><br/><li><strong>3. 원가 회계 및 전표 관리 시스템 구축 (2025.12 ~ 현재)</strong><ul><li>설명: 제조 원가를 제품 및 공정별로 배부하고 회계 전표와 매핑하는 모듈 개발</li><li>수행 내용: 가동 시간, 인력, 경비 등 배부 기준을 적용한 공정별 원가 계산 구현 진행, 수기 전표 발행 시 데이터 무결성을 위한 복합 유효성 검사 로직 강화, 천안 사업장 현장 상주를 통한 실시간 요구사항 분석 및 시스템 안정화 지원</li><li>성과: 제품별 실제 원가 분석을 통한 수익성 지표 시각화 및 회계 투명성 확보</li></ul></li><br/><li><strong>4. 공통 기능 및 생산성 도구 개발</strong><ul><li>코드 제너레이터: 컨트롤러, 서비스, JSP 레이어를 자동 생성하는 템플릿 관리자 개발 참여</li><li>도움말 모듈화: 페이지 내 툴팁 및 팝업을 공통화하여 JSP 인클루드 방식으로 자동 삽입되게 설계</li></ul></li></ul></div>"
+        }
+    ]
+}

@@ -1,16 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Skills() {
-    let [icon, setIcon] = useState(true);
+    let [icon, setIcon] = useState(false);
     let [iconarray, setIconArray] = useState(Array.from({length:22}, (_,x)=> x+1));
     let showIcon = ()=>{
         setIcon(!icon);
-        setTimeout(()=>{
+       
+      }
+    useEffect(()=>{
+         setTimeout(()=>{
           document.querySelector(".skils .content").style.height = document.querySelector(".skils .content > div").offsetHeight+1+"px";
         },500)
-      }
+    },[icon]);
   return (
-    <div className='skils'>
+    <div className='skils' id='skill'>
         <span className='title'>02. SKILLS</span>
         <div className='content'>
            <div>

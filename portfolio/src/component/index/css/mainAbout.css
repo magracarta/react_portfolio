@@ -1,0 +1,224 @@
+/* About Section — 기본: px 고정 (1100px ~ 1920px) */
+.sectionAbout { padding: 120px 0; }
+
+.aboutInner {
+    display: flex;
+    gap: 90px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+/* ── 왼쪽 ── */
+.aboutLeft { flex: 1; }
+
+.aboutLabel {
+    font-size: 13px;
+    color: var(--gray5);
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+.aboutSub {
+    font-size: 14px;
+    color: var(--gray4);
+    margin: 0 0 8px;
+}
+.aboutTitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--titlecolor);
+    margin: 0 0 30px;
+    line-height: 1.3em;
+}
+
+.aboutDesc { margin-bottom: 30px; }
+.aboutDesc p {
+    font-size: 14px;
+    color: var(--gray5);
+    line-height: 1.8em;
+    margin: 0 0 16px;
+}
+
+.aboutTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.tag {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: default;
+}
+.tag.filled {
+    background: var(--titlecolor);
+    color: var(--background);
+    border: 1px solid var(--titlecolor);
+}
+.tag.outline {
+    background: transparent;
+    color: var(--titlecolor);
+    border: 1px solid var(--gray5);
+    
+}
+
+.aboutLinks { display: flex; gap: 12px; }
+.aboutLinkIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--gray5);
+    color: var(--titlecolor);
+    transition: background 0.2s, color 0.2s;
+}
+.aboutLinkIcon:hover { background: var(--titlecolor); color: var(--background); }
+.aboutLinkIcon svg { width: 20px; height: 20px; }
+
+/* ── 오른쪽 ── */
+.aboutRight {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutCard {
+    background: var(--textcolorw);
+    border-radius: 12px;
+    padding: 24px 30px;
+}
+
+.cardLabel {
+    font-size: 12px;
+    color: var(--gray4);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--titlecolor);
+    margin: 0 0 4px;
+}
+.cardSub {
+    font-size: 14px;
+    color: var(--gray4);
+    margin: 0;
+}
+
+/* 타임라인 */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.timeline li {
+    padding-left: 14px;
+    border-left: 2px solid var(--gray2);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.tlDate {
+    font-size: 12px;
+    color: var(--gray4);
+}
+.timeline li strong {
+    font-size: 14px;
+    color: var(--titlecolor);
+    font-weight: 600;
+}
+.tlRole {
+    font-size: 12px;
+    color: var(--gray4);
+}
+
+/* 자격증 */
+.certList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.certList li {
+    font-size: 14px;
+    color: var(--titlecolor);
+}
+
+/* 1920px 이상: vw 비율 */
+@media screen and (min-width: 1920px) {
+    .sectionAbout { padding: 6.25vw 0; }
+    .aboutInner { gap: 5.125vw; max-width: 62.5vw; }
+
+    .aboutLabel { font-size: 0.833vw; margin-bottom: 0.625vw; }
+    .aboutSub { font-size: 0.729vw; margin: 0 0 0.417vw; }
+    .aboutTitle { font-size: 2.083vw; margin: 0 0 1.563vw; }
+
+    .aboutDesc { margin-bottom: 1.563vw; }
+    .aboutDesc p { font-size: 0.729vw; margin: 0 0 0.833vw; }
+
+    .aboutTags { gap: 0.417vw; margin-bottom: 1.563vw; }
+    .tag { font-size: 0.729vw; padding: 0.313vw 0.833vw; }
+
+    .aboutLinks { gap: 0.625vw; }
+    .aboutLinkIcon { width: 2.083vw; height: 2.083vw; }
+    .aboutLinkIcon svg { width: 1.042vw; height: 1.042vw; }
+
+    .aboutRight { gap: 0.833vw; }
+    .aboutCard { border-radius: 0.625vw; padding: 1.25vw 1.563vw; }
+
+    .cardLabel { font-size: 0.625vw; margin-bottom: 0.417vw; }
+    .cardTitle { font-size: 0.938vw; margin: 0 0 0.208vw; }
+    .cardSub { font-size: 0.729vw; }
+
+    .timeline { gap: 0.833vw; }
+    .timeline li { padding-left: 0.729vw; gap: 0.104vw; }
+    .tlDate { font-size: 0.625vw; }
+    .timeline li strong { font-size: 0.729vw; }
+    .tlRole { font-size: 0.625vw; }
+
+    .certList { gap: 0.313vw; }
+    .certList li { font-size: 0.729vw; }
+}
+
+/* 모바일 */
+@media screen and (max-width: 1100px) {
+    .sectionAbout { padding: 15vw 0; }
+    .aboutInner { flex-direction: column; max-width: 100%; gap: 0; padding: 0 15px; }
+    .aboutLabel { font-size: 3vw; margin-bottom: 2vw; }
+    .aboutSub { font-size: 3vw; }
+    .aboutTitle { font-size: 7vw; margin-bottom: 5vw; }
+    .aboutDesc { margin-bottom: 5vw; }
+    .aboutDesc p { font-size: 3.5vw; margin: 0 0 3vw; }
+    .aboutTags { gap: 2vw; margin-bottom: 5vw; }
+    .tag { font-size: 3vw; padding: 1.5vw 3vw; }
+    .aboutLinks { gap: 3vw; }
+    .aboutLinkIcon { width: 10vw; height: 10vw; }
+    .aboutLinkIcon svg { width: 5vw; height: 5vw; }
+    .aboutRight { width: 100%; gap: 3vw; margin-top: 8vw; }
+    .aboutCard { border-radius: 2vw; padding: 4vw 5vw; }
+    .cardLabel { font-size: 2.8vw; margin-bottom: 2vw; }
+    .cardTitle { font-size: 4vw; }
+    .cardSub { font-size: 3vw; }
+    .timeline { gap: 4vw; }
+    .timeline li { padding-left: 3vw; }
+    .tlDate { font-size: 2.8vw; }
+    .timeline li strong { font-size: 3.2vw; }
+    .tlRole { font-size: 2.8vw; }
+    .certList { gap: 2vw; }
+    .certList li { font-size: 3.2vw; }
+}

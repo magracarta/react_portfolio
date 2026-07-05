@@ -23,7 +23,7 @@ function Header({lenis , setLenis}) {
     let beforeScroll = 0;
     window.addEventListener("scroll",(e)=>{
       let current = window.scrollY;
-      if(current > beforeScroll){
+      if(current > beforeScroll && current > 120 ){
         setUp(true);
       }else{
         setUp(false);
